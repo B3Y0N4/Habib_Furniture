@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .image-frame-container {
+      display: flex;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .image-frame {
+      margin: 0 10px;
+      text-align: center;
+    }
+
+    .image-frame img {
+      width: 300px;
+      height: auto;
+    }
+
+    .image-frame .title {
+      margin-top: 5px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="image-frame-container">
+    <div class="image-frame" onclick="openLink('image1.html')">
+        <div class="title">Title 1</div>
+      <img src="images/post-11.jpg" alt="Image 1">
+      
+    </div>
+    <div class="image-frame" onclick="openLink('image2.html')">
+        <div class="title">Title 2</div>
+      <img src="images/post-11.jpg" alt="Image 2">
+    </div>
+    <div class="image-frame" onclick="openLink('image3.html')">
+        <div class="title">Title 3</div>
+      <img src="images/post-11.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
+

@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="images/logo.png" />
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -27,10 +27,179 @@
     />
     <link href="css/tiny-slider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
-    <title>
-      Furni Free Bootstrap 5 Template for Furniture and Interior Design Websites
-      by Untree.co
-    </title>
+    <title>Draggable Image Slider | CodingNepal</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="script.js" defer></script>
+     <style>
+      .image-frame {
+        color: gold;
+        margin: 0 35px;
+        text-align: center;
+        background-color: #3b5d50; /* Replace with your desired background color value */
+        font-size: 24px; /* Increase the font size */}
+      </style>
+    <style>
+      .image-frame-container {
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+      }
+  
+      .image-frame {
+        margin: 0 10px;
+        text-align: center;
+      }
+  
+      .image-frame img {
+        width: 500px;
+        height: auto;
+      }
+  
+      .image-frame .title {
+        margin-top: 5px;
+        font-weight: bold;
+      }
+    </style>
+    <style>
+      body {
+  background-color: #3b5d50;
+}
+
+.royal-text {
+  font-family: "URW Chancery L", cursive;
+  font-size: 36px;
+  color: #3b5d50;
+  text-align: center;
+  padding: 20px;
+  background-color: #e8b923;
+  border: 2px solid #D8BFA6;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+    </style>
+    
+    <style>
+      /* Import Google font - Poppins */
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      .wrapper {
+        display: flex;
+        max-width: 1600px; /* Increase the max-width to make the frame bigger */
+        height: 400px; /* Increase the height of the frame */
+        position: relative;
+        margin: 20px auto 0; /* Add margin-top to create spacing */
+      }
+      
+      .wrapper i {
+        height: 44px;
+        width: 44px;
+        color: #f2f2f2; /* Change the color to yellow gold */
+        cursor: pointer;
+        font-size: 1.15rem;
+        position: absolute;
+        text-align: center;
+        line-height: 44px;
+        background: gold;
+        border-radius: 50%;
+        transition: transform 0.1s linear;
+      }
+      
+      .wrapper i:active {
+        transform: scale(0.9);
+      }
+      
+      .wrapper i:hover {
+        background: gold;
+      }
+      
+       .wrapper i:first-child {
+        left: 10px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+            .wrapper i:last-child {
+        left: unset;
+        right: 10px;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+
+
+      .wrapper .carousel {
+        font-size: 0px;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+      }
+      
+      .carousel.dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+      }
+      
+      .carousel.dragging img {
+        pointer-events: none;
+      }
+      
+      .carousel img {
+        height: 340px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 14px;
+        width: calc(100% / 3);
+      }
+      
+      .carousel img:first-child {
+        margin-left: 0px;
+      }
+      
+      @media screen and (max-width: 900px) {
+        .carousel img {
+          width: calc(100% / 2);
+        }
+      }
+      
+      @media screen and (max-width: 550px) {
+        .carousel img {
+          width: 100%;
+        }
+      }
+    </style>    
+        
+    <style>
+      .navbar-brand {
+        display: inline-block;
+        height: 200px; /* Adjust the height to your desired standard size */
+        line-height: 100px; /* Match the line-height with the height for vertical alignment */
+      }
+    
+      .navbar-brand img {
+        height: 100%; /* Make the logo fill the entire height of the container */
+        width: auto; /* Preserve the aspect ratio of the logo */
+      }
+    </style>
+    
+    <style>
+      .hero-img-wrap img {
+        width: 110%;
+        height: auto;
+        margin-left: 65px;
+        margin-top: 90px;
+      }
+    </style>
   </head>
 
   <body>
@@ -40,9 +209,10 @@
       arial-label="Furni navigation bar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          >Habib Furniture<span>.</span></a
-        >
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png">
+        </a>
+        
 
         <button
           class="navbar-toggler"
@@ -61,7 +231,6 @@
             <li class="nav-item active">
               <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li><a class="nav-link" href="shop.html">Shop</a></li>
             <li><a class="nav-link" href="about.html">About us</a></li>
             <li><a class="nav-link" href="services.html">Services</a></li>
             <li><a class="nav-link" href="contact.html">Contact us</a></li>
@@ -77,11 +246,9 @@
         <div class="row justify-content-between">
           <div class="col-lg-5">
             <div class="intro-excerpt">
-              <h1>Royal Sofa <span clsas="d-block">Design Studio</span></h1>
+              <h1>Qualified in Turkey & Nigeria <span clsas="d-block">Now in Ghana!!</span></h1>
               <p class="mb-4">
-                Elevate your living space with our exceptional designer sofas,
-                meticulously crafted to transform any room into a luxurious
-                haven.
+                "Welcome to a world of comfort and style! Our friendly team of furniture experts, qualified in Turkey and Nigeria, is now bringing their unique designs and exceptional craftsmanship to Ghana. Come and explore our collection today!"
               </p>
               <p>
                 <a href="contact.html" class="btn btn-secondary me-2"
@@ -100,242 +267,158 @@
     </div>
     <!-- End Hero Section -->
     <!-- Start Blog Section -->
-    <div class="blog-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-1.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 19, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-2.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Robert Fox</a></span>
-                  <span>on <a href="#">Dec 15, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-3.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 12, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-4.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 19, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-5.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Robert Fox</a></span>
-                  <span>on <a href="#">Dec 15, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-6.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 12, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-7.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">First Time Home Owner Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 19, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-8.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">How To Keep Your Furniture Clean</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Robert Fox</a></span>
-                  <span>on <a href="#">Dec 15, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12 col-sm-6 col-md-4 mb-5">
-            <div class="post-entry">
-              <a href="#" class="post-thumbnail"
-                ><img src="images/post-3.jpg" alt="Image" class="img-fluid"
-              /></a>
-              <div class="post-content-entry">
-                <h3><a href="#">Small Space Furniture Apartment Ideas</a></h3>
-                <div class="meta">
-                  <span>by <a href="#">Kristin Watson</a></span>
-                  <span>on <a href="#">Dec 12, 2021</a></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <div class="carousel">
+        <img src="images/post-7.jpg" alt="img" draggable="false">
+        <img src="images/post-12.jpg" alt="img" draggable="false">
+        <img src="images/post-2.jpg" alt="img" draggable="false">
+        <img src="images/post-13.jpg" alt="img" draggable="false">
+        <img src="images/post-9.jpg" alt="img" draggable="false">
+        <img src="images/post-8.jpg" alt="img" draggable="false">
+        <img src="images/post-6.jpg" alt="img" draggable="false">
+        <img src="images/post-5.jpg" alt="img" draggable="false">
+        <img src="images/post-4.jpg" alt="img" draggable="false">
       </div>
+      <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
+    <script>
+        const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll("img")[0],
+arrowIcons = document.querySelectorAll(".wrapper i");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+});
+
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+</script>
     <!-- End Blog Section -->
 
-    <!-- Start Why Choose Us Section -->
-    <div class="why-choose-section">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-6">
-            <h2 class="section-title">Why Choose Us</h2>
-            <p>
-              Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet
-              velit. Aliquam vulputate velit imperdiet dolor tempor tristique.
-            </p>
-
-            <div class="row my-5">
-              <div class="col-6 col-md-6">
-                <div class="feature">
-                  <div class="icon">
-                    <img src="images/truck.svg" alt="Image" class="imf-fluid" />
-                  </div>
-                  <h3>Fast &amp; Free Shipping</h3>
-                  <p>
-                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                    aliquet velit. Aliquam vulputate.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-6">
-                <div class="feature">
-                  <div class="icon">
-                    <img src="images/bag.svg" alt="Image" class="imf-fluid" />
-                  </div>
-                  <h3>Easy to Shop</h3>
-                  <p>
-                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                    aliquet velit. Aliquam vulputate.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-6">
-                <div class="feature">
-                  <div class="icon">
-                    <img
-                      src="images/support.svg"
-                      alt="Image"
-                      class="imf-fluid"
-                    />
-                  </div>
-                  <h3>24/7 Support</h3>
-                  <p>
-                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                    aliquet velit. Aliquam vulputate.
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-6">
-                <div class="feature">
-                  <div class="icon">
-                    <img
-                      src="images/return.svg"
-                      alt="Image"
-                      class="imf-fluid"
-                    />
-                  </div>
-                  <h3>Hassle Free Returns</h3>
-                  <p>
-                    Donec vitae odio quis nisl dapibus malesuada. Nullam ac
-                    aliquet velit. Aliquam vulputate.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="img-wrap">
-              <img
-                src="images/why-choose-us-img.jpg"
-                alt="Image"
-                class="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
+    <!-- Start of Shop By Room -->
+    <h1 class="royal-text">Shop by Room</h1>
+    <div class="image-frame-container">
+      <div class="image-frame" onclick="openLink('image1.html')">
+        <img src="images/Bedroom.jpg" alt="Image 1">
+        <div class="title">Bed & Bedroom Set</div>
+        
+      </div>
+      <div class="image-frame" onclick="openLink('image2.html')">
+        <img src="images/post-11.jpg" alt="Image 2">
+        <div class="title">Living-Room</div>
+      </div>
+      <div class="image-frame" onclick="openLink('image3.html')">
+        <img src="images/Tv-Units.jpg" alt="Image 3">
+        <div class="title">Tv Unit </div>
       </div>
     </div>
-    <!-- End Why Choose Us Section -->
+    <div class="image-frame-container">
+      <div class="image-frame" onclick="openLink('image1.html')">
+        <img src="images/Kitchen.jpg" alt="Image 4">
+        <div class="title">Kichen Set</div>
+        
+      </div>
+      <div class="image-frame" onclick="openLink('image2.html')">
+        <img src="images/Study-Desk.jpg" alt="Image 5">
+        <div class="title">Study Desk</div>
+      </div>
+      <div class="image-frame" onclick="openLink('image3.html')">
+        <img src="images/Wardobe.jpg" alt="Image 6">
+        <div class="title">Wardrobe </div>
+      </div>
+    </div>
+    <div class="image-frame-container">
+      <div class="image-frame" onclick="openLink('image1.html')">
+        <img src="images/Coat Stant.jpg" alt="Image 7">
+        <div class="title">Coat Stant</div>
+        
+      </div>
+      <div class="image-frame" onclick="openLink('image3.html')">
+        <img src="images/dresser.jpg" alt="Image 9">
+        <div class="title">Dresser & Commonde</div>
+      </div>
+      <div class="image-frame" onclick="openLink('image2.html')">
+        <img src="images/book case.jpg" alt="Image 8">
+        <div class="title">Book Case</div>
+      </div>
+    </div>
+  
+    <script>
+      function openLink(url) {
+        window.location.href = url;
+      }
+    </script>
+    
+    <!-- End of shop by Room -->
 
     <!-- Start Footer Section -->
     <footer class="footer-section">
       <div class="container relative">
-        <div class="sofa-img">
-          <img src="images/sofa.png" alt="Image" class="img-fluid" />
-        </div>
+        
 
         <div class="row">
           <div class="col-lg-8">
@@ -377,7 +460,7 @@
         <div class="row g-5 mb-5">
           <div class="col-lg-4">
             <div class="mb-4 footer-logo-wrap">
-              <a href="#" class="footer-logo">Furni<span>.</span></a>
+              <a href="#" class="footer-logo">Habib Furniture<span>.</span></a>
             </div>
             <p class="mb-4">
               Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio
