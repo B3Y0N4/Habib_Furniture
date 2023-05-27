@@ -35,6 +35,18 @@
         margin-top: 38px;
       }
     </style>
+     <style>
+      .navbar-brand {
+        display: inline-block;
+        height: 200px; /* Adjust the height to your desired standard size */
+        line-height: 100px; /* Match the line-height with the height for vertical alignment */
+      }
+    
+      .navbar-brand img {
+        height: 100%; /* Make the logo fill the entire height of the container */
+        width: auto; /* Preserve the aspect ratio of the logo */
+      }
+    </style>
   </head>
 
   <body>
@@ -44,9 +56,9 @@
       arial-label="Furni navigation bar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          >Habib Furniture<span>.</span></a
-        >
+        <a class="navbar-brand" href="index.html">
+					<img src="images/logo.png">
+				  </a>
 
         <button
           class="navbar-toggler"

@@ -14,7 +14,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="shortcut icon" href="images/logo.png" />
 
     <meta name="description" content="" />
     <meta name="keywords" content="bootstrap, bootstrap4" />
@@ -28,14 +28,26 @@
     <link href="css/tiny-slider.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <style>
-      .photo-thumbnail {
-  border: -70px solid #fafafa;
-  width: 450px;
-  height: 250px;
-  object-fit: cover;
-}
+      .navbar-brand {
+        display: inline-block;
+        height: 200px; /* Adjust the height to your desired standard size */
+        line-height: 100px; /* Match the line-height with the height for vertical alignment */
+      }
+    
+      .navbar-brand img {
+        height: 100%; /* Make the logo fill the entire height of the container */
+        width: auto; /* Preserve the aspect ratio of the logo */
+      }
+    </style>
+    <style>
+        .photo-thumbnail {
+        border: -70px solid #fafafa;
+        width: 450px;
+        height: 250px;
+        object-fit: cover;
+      }
 
-      .hero-img-wrap img {
+       .hero-img-wrap img {
         width: 400%;
         height: 400;
         margin-left: 400px;
@@ -44,39 +56,39 @@
     </style>
 
     <style>
-body{background-color:hsl(165, 20%, 96%)}
+    body{background-color:hsl(30, 20%, 96%)}
 
-#frame{
-  position:relative;
-  padding:0;
-  margin:0;
-  border:solid 15px #3b5d50; 
-  max-width:600px;
-  margin:40px auto;
-  box-shadow:-3px -3px 12px #686965cd;
-  
-  }
-#border{
-  position:relative;
-  padding:0;
-  margin:0;
-  border:solid 70px white;
- box-shadow:-3px -3px 12px #999;
-     }  
-img{
-  display:block;
-  padding:0;
-  margin:0;
-  width:100%;
-  height:auto;
-  border-top:solid 2px #aaa;
-  border-left:solid 2px #aaa;
-  border-bottom:solid 2px #ccc;
-  border-right:solid 2px #ccc;
-  }
- 
+    #frame{
+      position:relative;
+      padding:0;
+      margin:0;
+      border:solid 15px #3b5d50; 
+      max-width:600px;
+      margin:40px auto;
+      box-shadow:-3px -3px 12px #686965cd;
+      
+      }
+    #border{
+      position:relative;
+      padding:0;
+      margin:0;
+      border:solid 70px white;
+    box-shadow:-3px -3px 12px #999;
+        }  
+    img{
+      display:block;
+      padding:0;
+      margin:0;
+      width:100%;
+      height:auto;
+      border-top:solid 2px #aaa;
+      border-left:solid 2px #aaa;
+      border-bottom:solid 2px #ccc;
+      border-right:solid 2px #ccc;
+      }
+    
     </style>
-    <style>
+  <style>
   .title1 {
     color: #333;
     text-align: center;
@@ -115,9 +127,9 @@ img{
       arial-label="Furni navigation bar"
     >
       <div class="container">
-        <a class="navbar-brand" href="index.html"
-          >Habib Furniture<span>.</span></a
-        >
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png">
+        </a>
 
         <button
           class="navbar-toggler"
@@ -152,9 +164,6 @@ img{
       <div class="container">
         <div class="row justify-content-between">
           <div class="col-lg-5">
-            <div class="intro-excerpt">
-              <h1>Our Design</h1>
-            </div>
           </div>
           <div class="col-lg-7"></div>
         </div>
