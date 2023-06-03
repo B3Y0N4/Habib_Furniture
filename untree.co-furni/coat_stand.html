@@ -1,0 +1,419 @@
+<!-- /*
+* Bootstrap 5
+* Template Name: Furni
+* Template Author: Untree.co
+* Template URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="author" content="Untree.co">
+  <link rel="shortcut icon" href="images/logo.png">
+
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
+
+		<!-- Bootstrap CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+		<link href="css/tiny-slider.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
+		<form action="contact.php" method="POST">
+           <style>
+            .copyright {
+                background-color: #3b5d50;
+                color: #3b5d50; /* Set text color to ensure readability */
+                padding: 20px; /* Adjust padding as needed */
+            }
+            </style>
+           
+		  <style>
+			.navbar-brand {
+			  display: inline-block;
+			  height: 200px; /* Adjust the height to your desired standard size */
+			  line-height: 100px; /* Match the line-height with the height for vertical alignment */
+			}
+		  
+			.navbar-brand img {
+			  height: 100%; /* Make the logo fill the entire height of the container */
+			  width: auto; /* Preserve the aspect ratio of the logo */
+			}
+		  </style>
+          <style>
+            body {
+                padding-top: 100px;
+            }
+        
+            #content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            .column {
+                width: 600px;
+                padding: 10px;
+            }
+        
+            .featured {
+                max-width: 500px;
+                max-height: 600px;
+                object-fit: cover;
+                cursor: pointer;
+                border: 2px solid goldenrod;
+            }
+        
+            .thumbnail {
+                object-fit: cover;
+                max-width: 180px;
+                max-height: 100px;
+                cursor: pointer;
+                opacity: 0.5;
+                margin: 5px;
+                border: 2px solid goldenrod;
+            }
+        
+            .thumbnail:hover {
+                opacity: 1;
+            }
+        
+            .active {
+                opacity: 1;
+            }
+        
+            .slide-wrapper {
+                max-width: 500px;
+                display: flex;
+                min-height: 100px;
+                align-items: center;
+            }
+        
+            .slider {
+                width: 440px;
+                display: flex;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+            }
+        
+            .slider::-webkit-scrollbar {
+                width: 8px;
+            }
+        
+            .slider::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+        
+            .slider::-webkit-scrollbar-thumb {
+                background-color: goldenrod;
+                outline: 1px solid slategrey;
+                border-radius: 100px;
+            }
+        
+            .slider::-webkit-scrollbar-thumb:hover {
+                background-color: #fff;
+            }
+        
+            .arrow {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+        
+            .arrow:hover {
+                opacity: 0.5;
+                width: 35px;
+                height: 35px;
+            }
+        </style>
+        <style>
+            body {
+              background-color: #3b5d50;
+              }
+        </style>
+        <style>
+            .column h2 {
+            font-size: 18px;
+            color: goldenrod ;
+            font-family: "URW Chancery L", cursive;
+            text-align: center;
+            }
+
+        </style>
+	</head>
+
+	<body>
+		<!-- Start Header/Navigation -->
+		<nav
+            class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
+            arial-label="Furni navigation bar"
+        >
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png">
+            </a>
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsFurni"
+            aria-controls="navbarsFurni"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+       <div class="collapse navbar-collapse" id="navbarsFurni">
+         <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+           <li class="nav-item active">
+             <a class="nav-link" href="teenage_wardrobe.html">Coat Stand</a>
+           </li>
+           <li><a class="nav-link" href="about.html">About us</a></li>
+           <li><a class="nav-link" href="services.html">Services</a></li>
+           <li><a class="nav-link" href="contact.html">Contact us</a></li>
+         </ul>
+       </div>
+     </div>
+   </nav>
+        <div id="content-wrapper">
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Asos</h2>
+                    <img class="featured" src="images/asos-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/asos-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/asos-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/asos-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Daylan</h2>
+                    <img class="featured" src="images/dalyan-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/dalyan-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/dalyan-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/dalyan-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Hone Jolly</h2>
+                    <img class="featured" src="images/home-jolly-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/home-jolly-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/home-jolly-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/home-jolly-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Home Otto</h2>
+                    <img class="featured" src="images/home-otto-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/home-otto-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/home-otto-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/home-otto-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Loft</h2>
+                    <img class="featured" src="images/coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/coat-stant-1.webp">
+                            <img class="thumbnail" src="images/coat-stant-2.webp">
+                            <img class="thumbnail" src="images/coat-stant-3.webp">
+                            <img class="thumbnail" src="images/coat-stant-4.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Melisa</h2>
+                    <img class="featured" src="images/melisa-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/melissa-study-desk-1.webp">
+                            <img class="thumbnail" src="images/melissa-study-desk-2.webp">
+                            <img class="thumbnail" src="images/melisa-coat-stant-3.webp">
+                            <img class="thumbnail" src="images/melisa-coat-stant-4.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Mira</h2>
+                    <img class="featured" src="images/special-coat-stant-3.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/special-coat-stant-3.webp">
+                            <img class="thumbnail" src="images/special-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/special-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/special-coat-stant-4.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Mirror</h2>
+                    <img class="featured" src="images/mirror-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/mirror-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/mirror-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/mirror-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Novan</h2>
+                    <img class="featured" src="images/novan-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/novan-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/novan-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/novan-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="slide-container">
+                    <h2>Rose</h2>
+                    <img class="featured" src="images/rose-coat-stant-1.webp">
+                    <div class="slide-wrapper">
+                        <div class="slider">
+                            <img class="thumbnail active" src="images/rose-coat-stant-1.webp">
+                            <img class="thumbnail" src="images/rose-coat-stant-2.webp">
+                            <img class="thumbnail" src="images/rose-coat-stant-3.webp">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <script type="text/javascript">
+            let thumbnails = document.getElementsByClassName('thumbnail');
+        
+            for (var i = 0; i < thumbnails.length; i++) {
+                thumbnails[i].addEventListener('mouseover', function () {
+                    let activeImage = document.getElementsByClassName('active');
+                    if (activeImage.length > 0) {
+                        activeImage[0].classList.remove('active');
+                    }
+                    this.classList.add('active');
+                    let featuredImage = this.closest('.slide-container').querySelector('.featured');
+                    featuredImage.src = this.src;
+                });
+            }
+        </script>
+       
+
+		<!-- Start Footer Section -->
+		<footer class="footer-section">
+			<div class="container relative">
+				<div class="row g-5 mb-5">
+					<div class="col-lg-4">
+						<div class="mb-4 footer-logo-wrap"><a href="#" class="footer-logo">Habib Furniture<span>.</span></a></div>
+						<p class="mb-4">Donec facilisis quam ut purus rutrum lobortis. Donec vitae odio quis nisl dapibus malesuada. Nullam ac aliquet velit. Aliquam vulputate velit imperdiet dolor tempor tristique. Pellentesque habitant</p>
+
+						<ul class="list-unstyled custom-social">
+							<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-twitter"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-instagram"></span></a></li>
+							<li><a href="#"><span class="fa fa-brands fa-linkedin"></span></a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-8">
+						<div class="row links-wrap">
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">About us</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Blog</a></li>
+									<li><a href="#">Contact us</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Support</a></li>
+									<li><a href="#">Knowledge base</a></li>
+									<li><a href="#">Live chat</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Jobs</a></li>
+									<li><a href="#">Our team</a></li>
+									<li><a href="#">Leadership</a></li>
+									<li><a href="#">Privacy Policy</a></li>
+								</ul>
+							</div>
+
+							<div class="col-6 col-sm-6 col-md-3">
+								<ul class="list-unstyled">
+									<li><a href="#">Nordic Chair</a></li>
+									<li><a href="#">Kruzo Aero</a></li>
+									<li><a href="#">Ergonomic Chair</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="border-top copyright">
+					<div class="row pt-4">
+						<div class="col-lg-6">
+							<p class="mb-2 text-center text-lg-start">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a> <!-- License information: https://untree.co/license/ -->
+            </p>
+						</div>
+
+						<div class="col-lg-6 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</footer>
+		<!-- End Footer Section -->	
+
+
+		<script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/tiny-slider.js"></script>
+		<script src="js/custom.js"></script>
+	</body>
+
+</html>
