@@ -22,76 +22,97 @@
 		<link href="css/tiny-slider.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
 		<form action="contact.php" method="POST">
-           <style>
-            .copyright {
-                background-color: #3b5d50;
-                color: #3b5d50; /* Set text color to ensure readability */
-                padding: 20px; /* Adjust padding as needed */
-            }
-            </style>
-           <style>
-            body {
-              background-color: #3b5d50;
-              }
-              /* Font Color */
-            .title {
-                color: goldenrod /* Change to your desired font color */
-            }
-
-            /* Font Size */
-            .title {
-                font-size: 16px; /* Change to your desired font size */
-            }
-
-            /* Font Family */
-            .title {
-                font-family: "URW Chancery L", cursive; /* Change to your desired font family */
-            }
-          </style>    
-		  <style>
-			.hero-img-wrap img {
-			  width: 100%;
-			  height: auto;
-			  margin-left: 65px;
-			  margin-top: 38px;
-			}
-		  </style>
-		  <style>
-			.navbar-brand {
-			  display: inline-block;
-			  height: 200px; /* Adjust the height to your desired standard size */
-			  line-height: 100px; /* Match the line-height with the height for vertical alignment */
-			}
-		  
-			.navbar-brand img {
-			  height: 100%; /* Make the logo fill the entire height of the container */
-			  width: auto; /* Preserve the aspect ratio of the logo */
-			}
-		  </style>
-          <style>
-            .image-frame-container {
-              display: flex;
-              justify-content: center;
-              cursor: pointer;
-              margin-bottom: 100px;
-            }
-        
-            .image-frame {
-              margin: 0 10px;
-              text-align: center;
-            }
-        
-            .image-frame img {
-              width: 700px;
-              height: auto;
-            }
-        
-            .image-frame .title {
-              margin-top: 40px;
-              font-weight: bold;
-              font-size: 24px; /* Adjust the font size as desired */
-            }
-          </style>
+			<style>
+				/* Default styles */
+			
+				body {
+					background-color: #3b5d50;
+				}
+			
+				.title {
+					color: goldenrod;
+					font-size: 16px;
+					font-family: "URW Chancery L", cursive;
+				}
+			
+				.hero-img-wrap img {
+					width: 100%;
+					height: auto;
+					margin-left: 65px;
+					margin-top: 38px;
+				}
+			
+				.navbar-brand {
+					display: inline-block;
+					height: 200px;
+					line-height: 100px;
+				}
+			
+				.navbar-brand img {
+					height: 100%;
+					width: auto;
+				}
+			
+				.image-frame-container {
+					display: flex;
+					justify-content: center;
+					cursor: pointer;
+					margin-bottom: 100px;
+				}
+			
+				.image-frame {
+					margin: 0 10px;
+					text-align: center;
+				}
+			
+				.image-frame img {
+					width: 700px;
+					height: auto;
+				}
+			
+				.image-frame .title {
+					margin-top: 40px;
+					font-weight: bold;
+					font-size: 24px;
+				}
+			
+				/* Responsive styles */
+			
+				@media only screen and (max-width: 768px) {
+					.hero-img-wrap img {
+						margin-left: 0;
+					}
+			
+					.image-frame-container {
+						flex-wrap: wrap;
+					}
+			
+					.image-frame {
+						flex: 0 0 100%;
+						margin: 0 0 20px;
+					}
+			
+					.image-frame img {
+						width: 100%;
+					}
+				}
+			
+				@media only screen and (max-width: 480px) {
+					.navbar-brand {
+						height: 100px;
+						line-height: 100px;
+					}
+			
+					.navbar-brand img {
+						height: 80%;
+					}
+			
+					.image-frame .title {
+						font-size: 20px;
+					}
+				}
+			</style>
+			
 	</head>
 
 	<body>
