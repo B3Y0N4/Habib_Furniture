@@ -1,130 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="images/logo.png" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap4" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="images/logo.png" />
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="css/tiny-slider.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <title>Draggable Image Slider | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-    <script src="script.js" defer></script>
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
 
-    <style>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="css/tiny-slider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <title>Draggable Image Slider | CodingNepal</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <script src="script.js" defer></script>
+
+  <style>
     .image-frame {
-      color: goldenrod ;
+      color: goldenrod;
       margin: 0 35px;
       text-align: center;
       background-color: #3b5d50;
       font-size: 24px;
     }
-    
+
     .image-frame-container {
       display: flex;
       justify-content: center;
       cursor: pointer;
     }
-    
+
     .image-frame {
       margin: 0 10px;
       text-align: center;
     }
-    
+
     .image-frame img {
-      width: 100%;
+      width: 90%;
       height: auto;
     }
-    
+
     .image-frame .title {
       margin-top: 5px;
       font-weight: bold;
     }
-    </style>
-    
-    <style>
+  </style>
+
+  <style>
     body {
       background-color: #3b5d50;
     }
-    
+
     .royal-text {
       font-family: "URW Chancery L", cursive;
       font-size: 36px;
       color: #3b5d50;
       text-align: center;
       padding: 20px;
-      background-color: goldenrod ;
+      background-color: goldenrod;
       border: 2px solid #D8BFA6;
       border-radius: 10px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     }
-    </style>
-    
+  </style>
 
-    <style>
+
+  <style>
     /* Import Google font - Poppins */
     @import url('<https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap>');
-    
+
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
-    
+
     .wrapper {
       display: flex;
-      max-width: 1700px; /* Increase the max-width to make the frame bigger */
-      height: 400px; /* Increase the height of the frame */
+      max-width: 1700px;
+      /* Increase the max-width to make the frame bigger */
+      height: 400px;
+      /* Increase the height of the frame */
       position: relative;
-      margin: 40px auto 0; /* Add margin-top to create spacing */
+      margin: 40px auto 0;
+      /* Add margin-top to create spacing */
     }
-    
+
     .wrapper i {
       height: 44px;
       width: 44px;
-      color: #f2f2f2; /* Change the color to yellow gold */
+      color: #f2f2f2;
+      /* Change the color to yellow gold */
       cursor: pointer;
       font-size: 1.15rem;
       position: absolute;
       text-align: center;
       line-height: 44px;
-      background: goldenrod ;
+      background: goldenrod;
       border-radius: 50%;
       transition: transform 0.1s linear;
     }
+
     .wrapper i:active {
       transform: scale(0.9);
     }
+
     .wrapper i:hover {
-      background: goldenrod ;
+      background: goldenrod;
     }
+
     .wrapper i:first-child {
       left: 10px;
       top: 50%;
       transform: translate(-50%, -50%);
+      z-index: 10;
     }
+
     .wrapper i:last-child {
       left: unset;
       right: 10px;
       top: 50%;
       transform: translate(50%, -50%);
     }
+
     .wrapper .carousel {
       font-size: 0px;
       cursor: pointer;
@@ -132,16 +137,16 @@
       white-space: nowrap;
       scroll-behavior: smooth;
     }
-    
+
     .carousel.dragging {
       cursor: grab;
       scroll-behavior: auto;
     }
-    
+
     .carousel.dragging img {
       pointer-events: none;
     }
-    
+
     .carousel img {
       height: 340px;
       object-fit: cover;
@@ -149,345 +154,332 @@
       margin-left: 14px;
       width: calc(100% / 3);
     }
-    
+
     .carousel img:first-child {
       margin-left: 0px;
     }
-    
+
     @media screen and (max-width: 900px) {
       .carousel img {
         width: calc(100% / 2);
       }
     }
-    
+
     @media screen and (max-width: 550px) {
       .carousel img {
         width: 100%;
       }
     }
-    </style>
- 
-    <style>
+  </style>
+
+  <style>
     .navbar-brand {
       display: inline-block;
       height: 10vw;
       line-height: 5vw;
     }
-    
+
     .navbar-brand img {
       height: 100%;
       width: auto;
     }
-    </style>
-    
-    <style>
+  </style>
+
+  <style>
     .hero-img-wrap img {
       width: 110%;
       height: auto;
       margin-left: 5vw;
       margin-top: 5vw;
     }
-    
+
     @media screen and (max-width: 768px) {
       .hero-img-wrap img {
         width: 100%;
         margin-left: 0;
       }
     }
-    </style>
-  </head>
+  </style>
+  <style>
+    @media (max-width: 768px) {
+      .custom-social {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
 
-  <body>
-    <!-- Start Header/Navigation -->
-    <nav
-      class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-      arial-label="Furni navigation bar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png">
-        </a>
-        
+      .custom-social li {
+        margin-right: 10px;
+      }
+    }
+  </style>
+</head>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsFurni"
-          aria-controls="navbarsFurni"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+<body>
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.png">
+      </a>
 
-        <div class="collapse navbar-collapse" id="navbarsFurni">
-          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li><a class="nav-link" href="about.html">About us</a></li>
-            <li><a class="nav-link" href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+        aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact us</a></li>
+        </ul>
       </div>
-    </nav>
-    <!-- End Header/Navigation -->
+    </div>
+  </nav>
+  <!-- End Header/Navigation -->
 
-    <!-- Start Hero Section -->
-    <div class="hero">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-5">
-            <div class="intro-excerpt">
-              <h1>Qualified in Turkey & Nigeria <span clsas="d-block">Now in Ghana!!</span></h1>
-              <p class="mb-4">
-                "Welcome to a world of comfort and style! Our friendly team of furniture experts, qualified in Turkey and Nigeria, is now bringing their unique designs and exceptional craftsmanship to Ghana. Come and explore our collection today!"
-              </p>
-              <p>
-                <a href="contact.html" class="btn btn-secondary me-2"
-                  >Contact Us</a
-                ><a href="index.html" class="btn btn-white-outline">Explore</a>
-              </p>
-            </div>
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5">
+          <div class="intro-excerpt">
+            <h1>Qualified in Turkey & Nigeria <span clsas="d-block">Now in Ghana!</span></h1>
+            <p class="mb-4">
+              "Welcome to a world of comfort and style! Our friendly team of furniture experts, qualified in Turkey and
+              Nigeria, is now bringing their unique designs and exceptional craftsmanship to Ghana. Come and explore our
+              collection today!"
+            </p>
+            <p>
+              <a href="contact.html" class="btn btn-secondary me-2">Contact Us</a>
+              <a href="#explore" class="btn btn-white-outline">Explore</a>
+            </p>
           </div>
-          <div class="col-lg-7">
-            <div class="hero-img-wrap">
-              <img src="images/couchx.png" class="img-fluid" />
-            </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="hero-img-wrap">
+            <img src="images/couchx.png" class="img-fluid" />
           </div>
         </div>
       </div>
     </div>
-    <!-- End Hero Section -->
-    <!-- Start Blog Section -->
-    <div class="wrapper">
-      <i id="left" class="fa-solid fa-angle-left"></i>
-      <div class="carousel">
-        <img src="images/post-8.webp" alt="img" draggable="false">
-        <img src="images/post-7.webp" alt="img" draggable="false">
-        <img src="images/post-6.webp" alt="img" draggable="false">
-        <img src="images/post-4.webp" alt="img" draggable="false">
-        <img src="images/post-5.webp" alt="img" draggable="false">
-        <img src="images/post-3.webp" alt="img" draggable="false">
-        <img src="images/post-1.webp" alt="img" draggable="false">
-        <img src="images/post-2.webp" alt="img" draggable="false">
-        <img src="images/post-9.webp" alt="img" draggable="false">
-        <img src="images/post-10.webp" alt="img" draggable="false">
-      </div>
-      <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
+  <!-- End Hero Section -->
+  <!-- Start Blog Section -->
+
+  <div class="wrapper">
+    <i id="left" class="fa-solid fa-angle-left"></i>
+    <div class="carousel">
+      <img src="images/post-8.webp" alt="img" draggable="false">
+      <img src="images/post-7.webp" alt="img" draggable="false">
+      <img src="images/post-6.webp" alt="img" draggable="false">
+      <img src="images/post-4.webp" alt="img" draggable="false">
+      <img src="images/post-5.webp" alt="img" draggable="false">
+      <img src="images/post-3.webp" alt="img" draggable="false">
+      <img src="images/post-1.webp" alt="img" draggable="false">
+      <img src="images/post-2.webp" alt="img" draggable="false">
+      <img src="images/post-9.webp" alt="img" draggable="false">
+      <img src="images/post-10.webp" alt="img" draggable="false">
     </div>
-    <script>
-        const carousel = document.querySelector(".carousel"),
-firstImg = carousel.querySelectorAll("img")[0],
-arrowIcons = document.querySelectorAll(".wrapper i");
+    <i id="right" class="fa-solid fa-angle-right"></i>
+  </div>
 
-let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+  <!-- End Blog Section -->
 
-const showHideIcons = () => {
-    // showing and hiding prev/next icon according to carousel scroll left value
-    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
-    arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
-    arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
-}
+  <!-- Start of Shop By Room -->
+  <h1 class="royal-text" id="explore">Shop by Room</h1>
+  <div class="image-frame-container">
+    <div class="image-frame" onclick="openLink('bedroom.html')">
+      <img src="images/Bedroom.webp" alt="Image 1">
+      <div class="title">Bed & Bedroom Set</div>
 
-arrowIcons.forEach(icon => {
-    icon.addEventListener("click", () => {
+    </div>
+    <div class="image-frame" onclick="openLink('living_room.html')">
+      <img src="images/batum.webp" alt="Image 2">
+      <div class="title">Living-Room</div>
+    </div>
+    <div class="image-frame" onclick="openLink('tv_unit.html')">
+      <img src="images/Tv-Units.webp" alt="Image 3">
+      <div class="title">Tv Unit </div>
+    </div>
+  </div>
+  <div class="image-frame-container">
+    <div class="image-frame" onclick="openLink('kichen.html')">
+      <img src="images/kitchen.webp" alt="Image 4">
+      <div class="title">kitchen Set</div>
+    </div>
+    <div class="image-frame" onclick="openLink('study_desk.html')">
+      <img src="images/banu-study-desk-1,.webp" alt="Image 5">
+      <div class="title">Study Desk</div>
+    </div>
+    <div class="image-frame" onclick="openLink('wadrobe.html')">
+      <img src="images/Wardobe.webp" alt="Image 6">
+      <div class="title">Wardrobe </div>
+    </div>
+  </div>
+  <div class="image-frame-container">
+    <div class="image-frame" onclick="openLink('coat_stand.html')">
+      <img src="images/Coat Stant.webp" alt="Image 7">
+      <div class="title">CoatStand</div>
+
+    </div>
+    <div class="image-frame" onclick="openLink('dresser_commonde.html')">
+      <img src="images/dresser.webp" alt="Image 9">
+      <div class="title">Dresser & Commonde</div>
+    </div>
+    <div class="image-frame" onclick="openLink('bookcase_cabinet.html')">
+      <img src="images/book case.webp" alt="Image 8">
+      <div class="title">Book Case & Cabinent</div>
+    </div>
+  </div>
+
+  <script>
+    function openLink(url) {
+      window.location.href = url;
+    }
+  </script>
+
+  <!-- End of shop by Room -->
+
+  <!-- Start Footer Section -->
+  <!-- Start Footer Section -->
+  <footer class="footer-section">
+    <div class="container relative">
+      <div class="row g-5 mb-5">
+
+
+        <div class="border-top">
+          <div class="row pt-4">
+            <div class="col-lg-4">
+              <p class="mb-2 text-center text-lg-start">
+                &copy;
+                <script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash; Designed with
+                love by <a>Jalal.Jr</a>
+              </p>
+            </div>
+
+            <div class="col-lg-4 text-center">
+              <ul class="list-unstyled custom-social d-inline-flex">
+                <li>
+                  <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+                </li>
+                <li>
+                  <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+                </li>
+              </ul>
+            </div>
+            
+            <div class="col-lg-4 text-center text-lg-end">
+              <ul class="list-unstyled d-inline-flex ms-auto">
+                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            
+
+          </div>
+        </div>
+      </div>
+  </footer>
+
+
+  <!-- End Footer Section -->
+  <!-- End Footer Section -->
+  <script>
+    const carousel = document.querySelector(".carousel"),
+      firstImg = carousel.querySelectorAll("img")[0],
+      arrowIcons = document.querySelectorAll(".wrapper i");
+
+    let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+    const showHideIcons = () => {
+      // showing and hiding prev/next icon according to carousel scroll left value
+      let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+      arrowIcons[0].style.display = carousel.scrollLeft == 0 ? "none" : "block";
+      arrowIcons[1].style.display = carousel.scrollLeft == scrollWidth ? "none" : "block";
+    }
+
+    arrowIcons.forEach(icon => {
+      icon.addEventListener("click", () => {
         let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
         // if clicked icon is left, reduce width value from the carousel scroll left else add to it
         carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
         setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+      });
     });
-});
 
-const autoSlide = () => {
-    // if there is no image left to scroll then return from here
-    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
-
-    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
-    let firstImgWidth = firstImg.clientWidth + 14;
-    // getting difference value that needs to add or reduce from carousel left to take middle img center
-    let valDifference = firstImgWidth - positionDiff;
-
-    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
-        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-    }
-    // if user is scrolling to the left
-    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
-}
-
-const dragStart = (e) => {
-    // updatating global variables value on mouse down event
-    isDragStart = true;
-    prevPageX = e.pageX || e.touches[0].pageX;
-    prevScrollLeft = carousel.scrollLeft;
-}
-
-const dragging = (e) => {
-    // scrolling images/carousel to left according to mouse pointer
-    if(!isDragStart) return;
-    e.preventDefault();
-    isDragging = true;
-    carousel.classList.add("dragging");
-    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
-    carousel.scrollLeft = prevScrollLeft - positionDiff;
-    showHideIcons();
-}
-
-const dragStop = () => {
-    isDragStart = false;
-    carousel.classList.remove("dragging");
-
-    if(!isDragging) return;
-    isDragging = false;
-    autoSlide();
-}
-
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("touchstart", dragStart);
-
-document.addEventListener("mousemove", dragging);
-carousel.addEventListener("touchmove", dragging);
-
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("touchend", dragStop);
-</script>
-    <!-- End Blog Section -->
-
-    <!-- Start of Shop By Room -->
-    <h1 class="royal-text">Shop by Room</h1>
-    <div class="image-frame-container">
-      <div class="image-frame" onclick="openLink('bedroom.html')">
-        <img src="images/Bedroom.webp" alt="Image 1">
-        <div class="title">Bed & Bedroom Set</div>
-        
-      </div>
-      <div class="image-frame" onclick="openLink('living_room.html')">
-        <img src="images/batum.webp" alt="Image 2">
-        <div class="title">Living-Room</div>
-      </div>
-      <div class="image-frame" onclick="openLink('tv_unit.html')">
-        <img src="images/Tv-Units.webp" alt="Image 3">
-        <div class="title">Tv Unit </div>
-      </div>
-    </div>
-    <div class="image-frame-container">
-      <div class="image-frame" onclick="openLink('kichen.html')">
-        <img src="images/kitchen.webp" alt="Image 4">
-        <div class="title">Kichen Set</div>
-      </div>
-      <div class="image-frame" onclick="openLink('study_desk.html')">
-        <img src="images/banu-study-desk-1,.webp" alt="Image 5">
-        <div class="title">Study Desk</div>
-      </div>
-      <div class="image-frame" onclick="openLink('wadrobe.html')">
-        <img src="images/Wardobe.webp" alt="Image 6">
-        <div class="title">Wardrobe </div>
-      </div>
-    </div>
-    <div class="image-frame-container">
-      <div class="image-frame" onclick="openLink('coat_stand.html')">
-        <img src="images/Coat Stant.webp" alt="Image 7">
-        <div class="title">CoatStand</div>
-        
-      </div>
-      <div class="image-frame" onclick="openLink('dresser_commonde.html')">
-        <img src="images/dresser.webp" alt="Image 9">
-        <div class="title">Dresser & Commonde</div>
-      </div>
-      <div class="image-frame" onclick="openLink('bookcase_cabinet.html')">
-        <img src="images/book case.webp" alt="Image 8">
-        <div class="title">Book Case & Cabinent</div>
-      </div>
-    </div>
-  
-    <script>
-      function openLink(url) {
-        window.location.href = url;
+    const autoSlide = () => {
+      // if there is no image left to scroll then return from here
+      if (carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) {
+        // set interval for automatic movement of the frames
+        setInterval(() => {
+          positionDiff = firstImgWidth;
+          carousel.scrollLeft += positionDiff;
+          setTimeout(() => showHideIcons(), 60);
+        }, 3000); // interval set to 3 seconds
+        return;
       }
-    </script>
-    
-    <!-- End of shop by Room -->
 
-    <!-- Start Footer Section -->
-   <!-- Start Footer Section -->
-   <footer class="footer-section">
-    <div class="container relative">
+      positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+      let firstImgWidth = firstImg.clientWidth + 14;
+      // getting difference value that needs to add or reduce from carousel left to take middle img center
+      let valDifference = firstImgWidth - positionDiff;
 
-      <div class="row g-5 mb-5">
-        <div class="col-lg-4">
-          
-          <ul class="list-unstyled custom-social">
-            <li>
-              <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
-            </li>
-          </ul>
-        </div>
+      if (carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+      }
+      // if user is scrolling to the left
+      carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
 
-        <div class="col-lg-8">
-          <div class="row links-wrap">
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
-            </div>
+    const dragStart = (e) => {
+      // updatating global variables value on mouse down event
+      isDragStart = true;
+      prevPageX = e.pageX || e.touches[0].pageX;
+      prevScrollLeft = carousel.scrollLeft;
+    }
 
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
-            </div>
+    const dragging = (e) => {
+      // scrolling images/carousel to left according to mouse pointer
+      if (!isDragStart) return;
+      e.preventDefault();
+      isDragging = true;
+      carousel.classList.add("dragging");
+      positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+      carousel.scrollLeft = prevScrollLeft - positionDiff;
+      showHideIcons();
+    }
 
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
-            </div>
+    const dragStop = () => {
+      isDragStart = false;
+      carousel.classList.remove("dragging");
 
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-          
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+      if (!isDragging) return;
+      isDragging = false;
+      autoSlide();
+    }
 
-      <div class="border-top copyright">
-        <div class="row pt-4">
-          <div class="col-lg-6">
-            <p class="mb-2 text-center text-lg-start">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a >Jalal.Jr</a>
-              <!-- License information: https://untree.co/license/ -->
-            </p>
-          </div>
+    carousel.addEventListener("mousedown", dragStart);
+    carousel.addEventListener("touchstart", dragStart);
 
-          <div class="col-lg-6 text-center text-lg-end">
-            <ul class="list-unstyled d-inline-flex ms-auto">
-              <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-  <!-- End Footer Section -->
-    <!-- End Footer Section -->
+    document.addEventListener("mousemove", dragging);
+    carousel.addEventListener("touchmove", dragging);
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+    document.addEventListener("mouseup", dragStop);
+    carousel.addEventListener("touchend", dragStop);
+  </script>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
 </html>
