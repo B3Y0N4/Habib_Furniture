@@ -7,238 +7,211 @@
 */ -->
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="images/logo.png">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Untree.co">
+	<link rel="shortcut icon" href="images/logo.png">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<form action="contact.php" method="POST">
-			<style>
-				/* Default styles */
-			
-				body {
-					background-color: #3b5d50;
-				}
-			
-				.title {
-					color: goldenrod;
-					font-size: 16px;
-					font-family: "URW Chancery L", cursive;
-				}
-			
+	<!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+	<link href="css/tiny-slider.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<form action="contact.php" method="POST">
+		<style>
+			/* Default styles */
+
+			body {
+				background-color: #3b5d50;
+			}
+
+			.title {
+				color: goldenrod;
+				font-size: 16px;
+				font-family: "URW Chancery L", cursive;
+			}
+
+			.hero-img-wrap img {
+				width: 100%;
+				height: auto;
+				margin-left: 65px;
+				margin-top: 38px;
+			}
+
+			.navbar-brand {
+				display: inline-block;
+				height: 200px;
+				line-height: 100px;
+			}
+
+			.navbar-brand img {
+				height: 100%;
+				width: auto;
+			}
+
+			.image-frame-container {
+				display: flex;
+				justify-content: center;
+				cursor: pointer;
+				margin-bottom: 100px;
+			}
+
+			.image-frame {
+				margin: 0 10px;
+				text-align: center;
+			}
+
+			.image-frame img {
+				width: 700px;
+				height: auto;
+			}
+
+			.image-frame .title {
+				margin-top: 40px;
+				font-weight: bold;
+				font-size: 24px;
+			}
+
+			/* Responsive styles */
+
+			@media only screen and (max-width: 768px) {
 				.hero-img-wrap img {
-					width: 100%;
-					height: auto;
-					margin-left: 65px;
-					margin-top: 38px;
+					margin-left: 0;
 				}
-			
+
+				.image-frame-container {
+					flex-wrap: wrap;
+				}
+
+				.image-frame {
+					flex: 0 0 100%;
+					margin: 0 0 20px;
+				}
+
+				.image-frame img {
+					width: 100%;
+				}
+			}
+
+			@media only screen and (max-width: 480px) {
 				.navbar-brand {
-					display: inline-block;
-					height: 200px;
+					height: 100px;
 					line-height: 100px;
 				}
-			
+
 				.navbar-brand img {
-					height: 100%;
-					width: auto;
+					height: 80%;
 				}
-			
-				.image-frame-container {
-					display: flex;
-					justify-content: center;
-					cursor: pointer;
-					margin-bottom: 100px;
-				}
-			
-				.image-frame {
-					margin: 0 10px;
-					text-align: center;
-				}
-			
-				.image-frame img {
-					width: 700px;
-					height: auto;
-				}
-			
+
 				.image-frame .title {
-					margin-top: 40px;
-					font-weight: bold;
-					font-size: 24px;
+					font-size: 20px;
 				}
-			
-				/* Responsive styles */
-			
-				@media only screen and (max-width: 768px) {
-					.hero-img-wrap img {
-						margin-left: 0;
-					}
-			
-					.image-frame-container {
-						flex-wrap: wrap;
-					}
-			
-					.image-frame {
-						flex: 0 0 100%;
-						margin: 0 0 20px;
-					}
-			
-					.image-frame img {
-						width: 100%;
-					}
-				}
-			
-				@media only screen and (max-width: 480px) {
-					.navbar-brand {
-						height: 100px;
-						line-height: 100px;
-					}
-			
-					.navbar-brand img {
-						height: 80%;
-					}
-			
-					.image-frame .title {
-						font-size: 20px;
-					}
-				}
-			</style>
-			
-	</head>
+			}
+		</style>
 
-	<body>
+</head>
 
-		<!-- Start Header/Navigation -->
-		<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+<body>
 
-			<div class="container">
-				<a class="navbar-brand" href="index.html">
-					<img src="images/logo.png">
-				  </a>
+	<!-- Start Header/Navigation -->
+	<nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
 
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni" aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<img src="images/logo.png">
+			</a>
 
-				<div class="collapse navbar-collapse" id="navbarsFurni">
-					<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-						<li class="nav-item">
-							<li class="active"><a class="nav-link" href="bookcase_cabinet.html">Book Case & Cabinent</a></li>
-						</li>
-                        <li><a class="nav-link" href="index.html">Home</a></li>
-						<li><a class="nav-link" href="about.html">About us</a></li>
-						<li><a class="nav-link" href="contact.html">Contact Us</a></li>
-					</ul>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+				aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarsFurni">
+				<ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+					<li class="nav-item">
+					<li class="active"><a class="nav-link" href="bookcase_cabinet.html">Book Case & Cabinent</a></li>
+					</li>
+					<li><a class="nav-link" href="index.html">Home</a></li>
+					<li><a class="nav-link" href="about.html">About us</a></li>
+					<li><a class="nav-link" href="contact.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="image-frame-container">
+		<div class="image-frame" onclick="openLink('book_case.html')">
+			<div class="title">Book Case</div>
+			<img src="images/sarmasik-bookcase-2.webp" alt="Image 1">
+		</div>
+
+		<div class="image-frame" onclick="openLink('cabinet.html')">
+			<div class="title">Cabinet</div>
+			<img src="images/terek2-cabinet-3.webp" alt="Image 2">
+		</div>
+	</div>
+	<script>
+		function openLink(url) {
+			window.location.href = url;
+		}
+	</script>
+
+	<!-- Start Footer Section -->
+	<!-- Start Footer Section -->
+	<footer class="footer-section">
+		<div class="container relative">
+			<div class="row g-5 mb-5">
+
+
+				<div class="border-top">
+					<div class="row pt-4">
+						<div class="col-lg-4">
+							<p class="mb-2 text-center text-lg-start">
+								&copy;
+								<script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash;
+								Designed with
+								love by <a>Jalal.Jr</a>
+							</p>
+						</div>
+
+						<div class="col-lg-4 text-center">
+							<ul class="list-unstyled custom-social d-inline-flex">
+								<li>
+									<a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+
+
+					</div>
 				</div>
 			</div>
-		</nav>
-  <div class="image-frame-container">
-        <div class="image-frame" onclick="openLink('book_case.html')">
-            <div class="title">Book Case</div>
-        <img src="images/sarmasik-bookcase-2.webp" alt="Image 1">
-        </div>
-
-        <div class="image-frame" onclick="openLink('cabinet.html')">
-            <div class="title">Cabinet</div>
-        <img src="images/terek2-cabinet-3.webp" alt="Image 2">
-        </div>
-  </div>
-  <script>
-    function openLink(url) {
-      window.location.href = url;
-    }
-  </script>
-		
-		<!-- Start Footer Section -->
-<!-- Start Footer Section -->
-<footer class="footer-section">
-	<div class="container relative">
-
-	  <div class="row g-5 mb-5">
-		<div class="col-lg-4">
-		  
-		  <ul class="list-unstyled custom-social">
-			<li>
-			  <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
-			</li>
-			<li>
-			  <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
-			</li>
-			<li>
-			  <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
-			</li>
-		  </ul>
-		</div>
-
-		<div class="col-lg-8">
-		  <div class="row links-wrap">
-			<div class="col-6 col-sm-6 col-md-3">
-			  <ul class="list-unstyled">
-			 
-			  </ul>
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-3">
-			  <ul class="list-unstyled">
-			 
-			  </ul>
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-3">
-			  <ul class="list-unstyled">
-			 
-			  </ul>
-			</div>
-
-			<div class="col-6 col-sm-6 col-md-3">
-			  <ul class="list-unstyled">
-		  
-			  </ul>
-			</div>
-		  </div>
-		</div>
-	  </div>
-
-	  <div class="border-top copyright">
-		<div class="row pt-4">
-		  <div class="col-lg-6">
-			<p class="mb-2 text-center text-lg-start">
-			  Copyright &copy;
-			  <script>
-				document.write(new Date().getFullYear());
-			  </script>
-			  . All Rights Reserved. &mdash; Designed with love by
-			  <a >Jalal.Jr</a>
-			  <!-- License information: https://untree.co/license/ -->
-			</p>
-		  </div>
-
-		  <div class="col-lg-6 text-center text-lg-end">
-			<ul class="list-unstyled d-inline-flex ms-auto">
-			  <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-			  <li><a href="#">Privacy Policy</a></li>
-			</ul>
-		  </div>
-		</div>
-	  </div>
-	</div>
-  </footer>
-  <!-- End Footer Section -->
-		<!-- End Footer Section -->	
+	</footer>
+	<!-- End Footer Section -->
+	<!-- End Footer Section -->
 
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
+	<script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/tiny-slider.js"></script>
+	<script src="js/custom.js"></script>
+</body>
 
 </html>

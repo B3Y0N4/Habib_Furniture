@@ -7,843 +7,805 @@
 */ -->
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="images/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="images/logo.png">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<form action="contact.php" method="POST">
-            <style>
-                body {
-                    padding-top: 100px;
-                    background-color: #3b5d50;
-                }
-                
-                #content-wrapper {
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: center;
-                    align-items: center;
-                }
-                
-                .column {
-                    width: 100%;
-                    max-width: 600px;
-                    padding: 10px;
-                }
-                
-                .featured {
-                    max-width: 100%;
-                    max-height: 600px;
-                    object-fit: cover;
-                    cursor: pointer;
-                    border: 2px solid goldenrod;
-                }
-                
-                .thumbnail {
-                    object-fit: cover;
-                    max-width: 100%;
-                    max-height: 100px;
-                    cursor: pointer;
-                    opacity: 0.5;
-                    margin: 5px;
-                    border: 2px solid goldenrod;
-                }
-                
-                .thumbnail:hover {
-                    opacity: 1;
-                }
-                
-                .active {
-                    opacity: 1;
-                }
-                
-                .slide-wrapper {
-                    max-width: 100%;
-                    display: flex;
-                    min-height: 100px;
-                    align-items: center;
-                    overflow-x: auto;
-                }
-                
-                .slider {
-                    display: flex;
-                    flex-wrap: nowrap;
-                }
-                
-                .slider::-webkit-scrollbar {
-                    width: 8px;
-                }
-                
-                .slider::-webkit-scrollbar-track {
-                    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-                }
-                
-                .slider::-webkit-scrollbar-thumb {
-                    background-color: goldenrod;
-                    outline: 1px solid slategrey;
-                    border-radius: 100px;
-                }
-                
-                .slider::-webkit-scrollbar-thumb:hover {
-                    background-color: #fff;
-                }
-                
-                .arrow {
-                    width: 30px;
-                    height: 30px;
-                    cursor: pointer;
-                    transition: 0.3s;
-                }
-                
-                .arrow:hover {
-                    opacity: 0.5;
-                    width: 35px;
-                    height: 35px;
-                }
-                
-                .navbar-brand {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    height: auto;
-                    line-height: normal;
-                    padding-top: 20px;
-                }
-                
-                .navbar-brand img {
-                    max-height: 100px;
-                    width: auto;
-                }
-                
-                .column h2 {
-                    font-size: 18px;
-                    color: goldenrod;
-                    font-family: "URW Chancery L", cursive;
-                    text-align: center;
-                }
-            </style>
-	</head>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <form action="contact.php" method="POST">
+        <style>
+            body {
+                padding-top: 100px;
+                background-color: #3b5d50;
+            }
 
-	<body>
-		<!-- Start Header/Navigation -->
-		<nav
-            class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-            arial-label="Furni navigation bar"
-        >
+            #content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .column {
+                width: 100%;
+                max-width: 600px;
+                padding: 10px;
+            }
+
+            .featured {
+                max-width: 100%;
+                max-height: 600px;
+                object-fit: cover;
+                cursor: pointer;
+                border: 2px solid goldenrod;
+            }
+
+            .thumbnail {
+                object-fit: cover;
+                max-width: 100%;
+                max-height: 100px;
+                cursor: pointer;
+                opacity: 0.5;
+                margin: 5px;
+                border: 2px solid goldenrod;
+            }
+
+            .thumbnail:hover {
+                opacity: 1;
+            }
+
+            .active {
+                opacity: 1;
+            }
+
+            .slide-wrapper {
+                max-width: 100%;
+                display: flex;
+                min-height: 100px;
+                align-items: center;
+                overflow-x: auto;
+            }
+
+            .slider {
+                display: flex;
+                flex-wrap: nowrap;
+            }
+
+            .slider::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            .slider::-webkit-scrollbar-track {
+                -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            }
+
+            .slider::-webkit-scrollbar-thumb {
+                background-color: goldenrod;
+                outline: 1px solid slategrey;
+                border-radius: 100px;
+            }
+
+            .slider::-webkit-scrollbar-thumb:hover {
+                background-color: #fff;
+            }
+
+            .arrow {
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                transition: 0.3s;
+            }
+
+            .arrow:hover {
+                opacity: 0.5;
+                width: 35px;
+                height: 35px;
+            }
+
+            .navbar-brand {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+                line-height: normal;
+                padding-top: 20px;
+            }
+
+            .navbar-brand img {
+                max-height: 100px;
+                width: auto;
+            }
+
+            .column h2 {
+                font-size: 18px;
+                color: goldenrod;
+                font-family: "URW Chancery L", cursive;
+                text-align: center;
+            }
+        </style>
+</head>
+
+<body>
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png">
             </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsFurni"
-            aria-controls="navbarsFurni"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-       <div class="collapse navbar-collapse" id="navbarsFurni">
-         <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-           <li class="nav-item active">
-             <a class="nav-link" href="book_case.html">Book Case</a>
-           </li>
-           <li><a class="nav-link" href="bookcase_cabinet.html">Book Cae & Cabinent</a></li>
-           <li><a class="nav-link" href="about.html">About us</a></li>
-           <li><a class="nav-link" href="contact.html">Contact us</a></li>
-         </ul>
-       </div>
-     </div>
-   </nav>
-        <div id="content-wrapper">
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Akin</h2>
-                    <img class="featured" src="images/akin-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/akin-bookcase-1.webp">
-                            <img class="thumbnail" src="images/akin-bookcase-2.webp">
-                            <img class="thumbnail" src="images/akin-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="book_case.html">Book Case</a>
+                    </li>
+                    <li><a class="nav-link" href="bookcase_cabinet.html">Book Cae & Cabinent</a></li>
+                    <li><a class="nav-link" href="about.html">About us</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
             </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Atmaca</h2>
-                    <img class="featured" src="images/atmaca-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/atmaca-bookcase-1.webp">
-                            <img class="thumbnail" src="images/atmaca-bookcase-2.webp">
-                            <img class="thumbnail" src="images/atmaca-bookcase-3.webp">
-                            <img class="thumbnail" src="images/atmaca-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Beyza</h2>
-                    <img class="featured" src="images/beyza-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/beyza-bookcase-1.webp">
-                            <img class="thumbnail" src="images/beyza-bookcase-2.webp">
-                            <img class="thumbnail" src="images/beyza-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Bombe</h2>
-                    <img class="featured" src="images/bombe-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/bombe-bookcase-1.webp">
-                            <img class="thumbnail" src="images/bombe-bookcase-2.webp">
-                            <img class="thumbnail" src="images/bombe-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Bubble</h2>
-                    <img class="featured" src="images/bubble-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/bubble-bookcase-1.webp">
-                            <img class="thumbnail" src="images/bubble-bookcase-2.webp">
-                            <img class="thumbnail" src="images/bubble-bookcase-3.webp">
-                            <img class="thumbnail" src="images/bubble-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Carina</h2>
-                    <img class="featured" src="images/carina-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/carina-bookcase-1.webp">
-                            <img class="thumbnail" src="images/carina-bookcase-2.webp">
-                            <img class="thumbnail" src="images/carina-bookcase-3.webp">
-                            <img class="thumbnail" src="images/carina-bookcase-4.webp">
-                            <img class="thumbnail" src="images/carina-bookcase-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Carmen</h2>
-                    <img class="featured" src="images/carmen-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/carmen-bookcase-1.webp">
-                            <img class="thumbnail" src="images/carmen-bookcase-2.webp">
-                            <img class="thumbnail" src="images/carmen-bookcase-3.webp">
-                            <img class="thumbnail" src="images/carmen-bookcase-4.webp">
-                            <img class="thumbnail" src="images/carmen-bookcase-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Castle</h2>
-                    <img class="featured" src="images/castle-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/castle-bookcase-1.webp">
-                            <img class="thumbnail" src="images/castle-bookcase-2.webp">
-                            <img class="thumbnail" src="images/castle-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Cevher</h2>
-                    <img class="featured" src="images/cevher-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/cevher-bookcase-1.webp">
-                            <img class="thumbnail" src="images/cevher-bookcase-2.webp">
-                            <img class="thumbnail" src="images/cevher-bookcase-3.webp">
-                            <img class="thumbnail" src="images/cevher-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Coton</h2>
-                    <img class="featured" src="images/coton-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/coton-bookcase-1.webp">
-                            <img class="thumbnail" src="images/coton-bookcase-2.webp">
-                            <img class="thumbnail" src="images/coton-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Cross</h2>
-                    <img class="featured" src="images/cross-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/cross-bookcase-1.webp">
-                            <img class="thumbnail" src="images/cross-bookcase-2.webp">
-                            <img class="thumbnail" src="images/cross-bookcase-3.webp">
-                            <img class="thumbnail" src="images/cross-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Dante</h2>
-                    <img class="featured" src="images/dante-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/dante-bookcase-1.webp">
-                            <img class="thumbnail" src="images/dante-bookcase-2.webp">
-                            <img class="thumbnail" src="images/dante-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Defne</h2>
-                    <img class="featured" src="images/defne-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/defne-bookcase-1.webp">
-                            <img class="thumbnail" src="images/defne-bookcase-2.webp">
-                            <img class="thumbnail" src="images/defne-bookcase-3.webp">
-                            <img class="thumbnail" src="images/defne-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Ece Elite</h2>
-                    <img class="featured" src="images/ece-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/ece-bookcase-1.webp">
-                            <img class="thumbnail" src="images/ece-bookcase-2.webp">
-                            <img class="thumbnail" src="images/ece-bookcase-3.webp">
-                            <img class="thumbnail" src="images/ece-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Ege</h2>
-                    <img class="featured" src="images/ege-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/ege-bookcase-1.webp">
-                            <img class="thumbnail" src="images/ege-bookcase-2.webp">
-                            <img class="thumbnail" src="images/ege-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Home</h2>
-                    <img class="featured" src="images/home-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/home-bookcase-1.webp">
-                            <img class="thumbnail" src="images/home-bookcase-2.webp">
-                            <img class="thumbnail" src="images/home-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>İnci</h2>
-                    <img class="featured" src="images/inci-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/inci-bookcase-1.webp">
-                            <img class="thumbnail" src="images/inci-bookcase-2.webp">
-                            <img class="thumbnail" src="images/inci-bookcase-3.webp">
-                            <img class="thumbnail" src="images/inci-bookcase-4.webp">
-                            <img class="thumbnail" src="images/inci-bookcase-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Joy</h2>
-                    <img class="featured" src="images/joy-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/joy-bookcase-1.webp">
-                            <img class="thumbnail" src="images/joy-bookcase-2.webp">
-                            <img class="thumbnail" src="images/joy-bookcase-3.webp">
-                            <img class="thumbnail" src="images/joy-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Lagina</h2>
-                    <img class="featured" src="images/lagina-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/lagina-bookcase-1.webp">
-                            <img class="thumbnail" src="images/lagina-bookcase-2.webp">
-                            <img class="thumbnail" src="images/lagina-bookcase-3.webp">
-                            <img class="thumbnail" src="images/lagina-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Latte</h2>
-                    <img class="featured" src="images/latte-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/latte-bookcase-1.webp">
-                            <img class="thumbnail" src="images/latte-bookcase-2.webp">
-                            <img class="thumbnail" src="images/latte-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Like</h2>
-                    <img class="featured" src="images/like-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/like-bookcase-1.webp">
-                            <img class="thumbnail" src="images/like-bookcase-2.webp">
-                            <img class="thumbnail" src="images/like-bookcase-3.webp">
-                            <img class="thumbnail" src="images/like-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Little</h2>
-                    <img class="featured" src="images/little-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/little-bookcase-1.webp">
-                            <img class="thumbnail" src="images/little-bookcase-2.webp">
-                            <img class="thumbnail" src="images/little-bookcase-3.webp">
-                            <img class="thumbnail" src="images/little-bookcase-4.webp">
-                            <img class="thumbnail" src="images/little-bookcase-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Lucky</h2>
-                    <img class="featured" src="images/lucky-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/lucky-bookcase-1.webp">
-                            <img class="thumbnail" src="images/lucky-bookcase-2.webp">
-                            <img class="thumbnail" src="images/lucky-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Machciato</h2>
-                    <img class="featured" src="images/machhiato-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/machhiato-bookcase-1.webp">
-                            <img class="thumbnail" src="images/machhiato-bookcase-2.webp">
-                            <img class="thumbnail" src="images/machhiato-bookcase-3.webp">
-                            <img class="thumbnail" src="images/machhiato-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Marmo</h2>
-                    <img class="featured" src="images/marmo-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/marmo-bookcase-1.webp">
-                            <img class="thumbnail" src="images/marmo-bookcase-2.webp">
-                            <img class="thumbnail" src="images/marmo-bookcase-3.webp">
-                            <img class="thumbnail" src="images/marmo-bookcase-4.webp">
-                            <img class="thumbnail" src="images/marmo-bookcase-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Maze</h2>
-                    <img class="featured" src="images/maze-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/maze-bookcase-1.webp">
-                            <img class="thumbnail" src="images/maze-bookcase-2.webp">
-                            <img class="thumbnail" src="images/maze-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Med</h2>
-                    <img class="featured" src="images/med-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/med-bookcase-1.webp">
-                            <img class="thumbnail" src="images/med-bookcase-2.webp">
-                            <img class="thumbnail" src="images/med-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Menan</h2>
-                    <img class="featured" src="images/menan-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/menan-bookcase-1.webp">
-                            <img class="thumbnail" src="images/menan-bookcase-2.webp">
-                            <img class="thumbnail" src="images/menan-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Miles</h2>
-                    <img class="featured" src="images/miles-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/miles-bookcase-1.webp">
-                            <img class="thumbnail" src="images/miles-bookcase-2.webp">
-                            <img class="thumbnail" src="images/miles-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Mocha</h2>
-                    <img class="featured" src="images/mocha-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/mocha-bookcase-1.webp">
-                            <img class="thumbnail" src="images/mocha-bookcase-2.webp">
-                            <img class="thumbnail" src="images/mocha-bookcase-3.webp">
-                            <img class="thumbnail" src="images/mocha-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Moda</h2>
-                    <img class="featured" src="images/moda-bookcase-.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/moda-bookcase-.webp">
-                            <img class="thumbnail" src="images/moda-bookcase-2.webp">
-                            <img class="thumbnail" src="images/moda-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Montesessori</h2>
-                    <img class="featured" src="images/montessori-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/montessori-bookcase-1.webp">
-                            <img class="thumbnail" src="images/montessori-bookcase-2.webp">
-                            <img class="thumbnail" src="images/montessori-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Nur</h2>
-                    <img class="featured" src="images/nur-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/nur-bookcase-1.webp">
-                            <img class="thumbnail" src="images/nur-bookcase-2.webp">
-                            <img class="thumbnail" src="images/nur-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Option</h2>
-                    <img class="featured" src="images/option-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/option-bookcase-1.webp">
-                            <img class="thumbnail" src="images/option-bookcase-2.webp">
-                            <img class="thumbnail" src="images/option-bookcase-3.webp">
-                            <img class="thumbnail" src="images/option-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Poyraz</h2>
-                    <img class="featured" src="images/poyraz-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/poyraz-bookcase-1.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-2.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-3.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-4.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-5.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-6.webp">
-                            <img class="thumbnail" src="images/poyraz-bookcase-7.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Rose</h2>
-                    <img class="featured" src="images/rose-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/rose-bookcase-1.webp">
-                            <img class="thumbnail" src="images/rose-bookcase-2.webp">
-                            <img class="thumbnail" src="images/rose-bookcase-3.webp">
-                            <img class="thumbnail" src="images/rose-bookcase-4.webp">
-                            <img class="thumbnail" src="images/rose-bookcase-5.webp">
-                            <img class="thumbnail" src="images/rose-bookcase-6.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Sarmaşik</h2>
-                    <img class="featured" src="images/sarmasik-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/sarmasik-bookcase-1.webp">
-                            <img class="thumbnail" src="images/sarmasik-bookcase-2.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Selenit</h2>
-                    <img class="featured" src="images/selenit-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/selenit-bookcase-1.webp">
-                            <img class="thumbnail" src="images/selenit-bookcase-2.webp">
-                            <img class="thumbnail" src="images/selenit-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Simetric</h2>
-                    <img class="featured" src="images/simetric-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/simetric-bookcase-1.webp">
-                            <img class="thumbnail" src="images/simetric-bookcase-2.webp">
-                            <img class="thumbnail" src="images/simetric-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Spring</h2>
-                    <img class="featured" src="images/spring-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/spring-bookcase-1.webp">
-                            <img class="thumbnail" src="images/spring-bookcase-2.webp">
-                            <img class="thumbnail" src="images/spring-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Sude</h2>
-                    <img class="featured" src="images/sude-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/sude-bookcase-1.webp">
-                            <img class="thumbnail" src="images/sude-bookcase-2.webp">
-                            <img class="thumbnail" src="images/sude-bookcase-3.webp">
-                            <img class="thumbnail" src="images/sude-bookcase-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Waves</h2>
-                    <img class="featured" src="images/wave-bookcase-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/wave-bookcase-1.webp">
-                            <img class="thumbnail" src="images/wave-bookcase-2.webp">
-                            <img class="thumbnail" src="images/wave-bookcase-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <script type="text/javascript">
-            let thumbnails = document.getElementsByClassName('thumbnail');
-        
-            for (var i = 0; i < thumbnails.length; i++) {
-                thumbnails[i].addEventListener('mouseover', function () {
-                    let activeImage = document.getElementsByClassName('active');
-                    if (activeImage.length > 0) {
-                        activeImage[0].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    let featuredImage = this.closest('.slide-container').querySelector('.featured');
-                    featuredImage.src = this.src;
-                });
-            }
-        </script>
-       
-
-		<!-- Start Footer Section -->
-<!-- Start Footer Section -->
-<footer class="footer-section">
-    <div class="container relative">
-
-      <div class="row g-5 mb-5">
-        <div class="col-lg-4">
-          
-          <ul class="list-unstyled custom-social">
-            <li>
-              <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
-            </li>
-            <li>
-              <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
-            </li>
-          </ul>
         </div>
-
-        <div class="col-lg-8">
-          <div class="row links-wrap">
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
+    </nav>
+    <div id="content-wrapper">
+        <div class="column">
+            <div class="slide-container">
+                <h2>Akin</h2>
+                <img class="featured" src="images/akin-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/akin-bookcase-1.webp">
+                        <img class="thumbnail" src="images/akin-bookcase-2.webp">
+                        <img class="thumbnail" src="images/akin-bookcase-3.webp">
+                    </div>
+                </div>
             </div>
-
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-             
-              </ul>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-3">
-              <ul class="list-unstyled">
-          
-              </ul>
-            </div>
-          </div>
         </div>
-      </div>
-
-      <div class="border-top copyright">
-        <div class="row pt-4">
-          <div class="col-lg-6">
-            <p class="mb-2 text-center text-lg-start">
-              Copyright &copy;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              . All Rights Reserved. &mdash; Designed with love by
-              <a >Jalal.Jr</a>
-              <!-- License information: https://untree.co/license/ -->
-            </p>
-          </div>
-
-          <div class="col-lg-6 text-center text-lg-end">
-            <ul class="list-unstyled d-inline-flex ms-auto">
-              <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-              <li><a href="#">Privacy Policy</a></li>
-            </ul>
-          </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Atmaca</h2>
+                <img class="featured" src="images/atmaca-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/atmaca-bookcase-1.webp">
+                        <img class="thumbnail" src="images/atmaca-bookcase-2.webp">
+                        <img class="thumbnail" src="images/atmaca-bookcase-3.webp">
+                        <img class="thumbnail" src="images/atmaca-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Beyza</h2>
+                <img class="featured" src="images/beyza-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/beyza-bookcase-1.webp">
+                        <img class="thumbnail" src="images/beyza-bookcase-2.webp">
+                        <img class="thumbnail" src="images/beyza-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Bombe</h2>
+                <img class="featured" src="images/bombe-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/bombe-bookcase-1.webp">
+                        <img class="thumbnail" src="images/bombe-bookcase-2.webp">
+                        <img class="thumbnail" src="images/bombe-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Bubble</h2>
+                <img class="featured" src="images/bubble-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/bubble-bookcase-1.webp">
+                        <img class="thumbnail" src="images/bubble-bookcase-2.webp">
+                        <img class="thumbnail" src="images/bubble-bookcase-3.webp">
+                        <img class="thumbnail" src="images/bubble-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Carina</h2>
+                <img class="featured" src="images/carina-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/carina-bookcase-1.webp">
+                        <img class="thumbnail" src="images/carina-bookcase-2.webp">
+                        <img class="thumbnail" src="images/carina-bookcase-3.webp">
+                        <img class="thumbnail" src="images/carina-bookcase-4.webp">
+                        <img class="thumbnail" src="images/carina-bookcase-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Carmen</h2>
+                <img class="featured" src="images/carmen-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/carmen-bookcase-1.webp">
+                        <img class="thumbnail" src="images/carmen-bookcase-2.webp">
+                        <img class="thumbnail" src="images/carmen-bookcase-3.webp">
+                        <img class="thumbnail" src="images/carmen-bookcase-4.webp">
+                        <img class="thumbnail" src="images/carmen-bookcase-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Castle</h2>
+                <img class="featured" src="images/castle-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/castle-bookcase-1.webp">
+                        <img class="thumbnail" src="images/castle-bookcase-2.webp">
+                        <img class="thumbnail" src="images/castle-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Cevher</h2>
+                <img class="featured" src="images/cevher-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/cevher-bookcase-1.webp">
+                        <img class="thumbnail" src="images/cevher-bookcase-2.webp">
+                        <img class="thumbnail" src="images/cevher-bookcase-3.webp">
+                        <img class="thumbnail" src="images/cevher-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Coton</h2>
+                <img class="featured" src="images/coton-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/coton-bookcase-1.webp">
+                        <img class="thumbnail" src="images/coton-bookcase-2.webp">
+                        <img class="thumbnail" src="images/coton-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Cross</h2>
+                <img class="featured" src="images/cross-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/cross-bookcase-1.webp">
+                        <img class="thumbnail" src="images/cross-bookcase-2.webp">
+                        <img class="thumbnail" src="images/cross-bookcase-3.webp">
+                        <img class="thumbnail" src="images/cross-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Dante</h2>
+                <img class="featured" src="images/dante-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/dante-bookcase-1.webp">
+                        <img class="thumbnail" src="images/dante-bookcase-2.webp">
+                        <img class="thumbnail" src="images/dante-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Defne</h2>
+                <img class="featured" src="images/defne-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/defne-bookcase-1.webp">
+                        <img class="thumbnail" src="images/defne-bookcase-2.webp">
+                        <img class="thumbnail" src="images/defne-bookcase-3.webp">
+                        <img class="thumbnail" src="images/defne-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Ece Elite</h2>
+                <img class="featured" src="images/ece-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/ece-bookcase-1.webp">
+                        <img class="thumbnail" src="images/ece-bookcase-2.webp">
+                        <img class="thumbnail" src="images/ece-bookcase-3.webp">
+                        <img class="thumbnail" src="images/ece-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Ege</h2>
+                <img class="featured" src="images/ege-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/ege-bookcase-1.webp">
+                        <img class="thumbnail" src="images/ege-bookcase-2.webp">
+                        <img class="thumbnail" src="images/ege-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Home</h2>
+                <img class="featured" src="images/home-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/home-bookcase-1.webp">
+                        <img class="thumbnail" src="images/home-bookcase-2.webp">
+                        <img class="thumbnail" src="images/home-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>İnci</h2>
+                <img class="featured" src="images/inci-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/inci-bookcase-1.webp">
+                        <img class="thumbnail" src="images/inci-bookcase-2.webp">
+                        <img class="thumbnail" src="images/inci-bookcase-3.webp">
+                        <img class="thumbnail" src="images/inci-bookcase-4.webp">
+                        <img class="thumbnail" src="images/inci-bookcase-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Joy</h2>
+                <img class="featured" src="images/joy-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/joy-bookcase-1.webp">
+                        <img class="thumbnail" src="images/joy-bookcase-2.webp">
+                        <img class="thumbnail" src="images/joy-bookcase-3.webp">
+                        <img class="thumbnail" src="images/joy-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Lagina</h2>
+                <img class="featured" src="images/lagina-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/lagina-bookcase-1.webp">
+                        <img class="thumbnail" src="images/lagina-bookcase-2.webp">
+                        <img class="thumbnail" src="images/lagina-bookcase-3.webp">
+                        <img class="thumbnail" src="images/lagina-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Latte</h2>
+                <img class="featured" src="images/latte-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/latte-bookcase-1.webp">
+                        <img class="thumbnail" src="images/latte-bookcase-2.webp">
+                        <img class="thumbnail" src="images/latte-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Like</h2>
+                <img class="featured" src="images/like-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/like-bookcase-1.webp">
+                        <img class="thumbnail" src="images/like-bookcase-2.webp">
+                        <img class="thumbnail" src="images/like-bookcase-3.webp">
+                        <img class="thumbnail" src="images/like-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Little</h2>
+                <img class="featured" src="images/little-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/little-bookcase-1.webp">
+                        <img class="thumbnail" src="images/little-bookcase-2.webp">
+                        <img class="thumbnail" src="images/little-bookcase-3.webp">
+                        <img class="thumbnail" src="images/little-bookcase-4.webp">
+                        <img class="thumbnail" src="images/little-bookcase-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Lucky</h2>
+                <img class="featured" src="images/lucky-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/lucky-bookcase-1.webp">
+                        <img class="thumbnail" src="images/lucky-bookcase-2.webp">
+                        <img class="thumbnail" src="images/lucky-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Machciato</h2>
+                <img class="featured" src="images/machhiato-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/machhiato-bookcase-1.webp">
+                        <img class="thumbnail" src="images/machhiato-bookcase-2.webp">
+                        <img class="thumbnail" src="images/machhiato-bookcase-3.webp">
+                        <img class="thumbnail" src="images/machhiato-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Marmo</h2>
+                <img class="featured" src="images/marmo-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/marmo-bookcase-1.webp">
+                        <img class="thumbnail" src="images/marmo-bookcase-2.webp">
+                        <img class="thumbnail" src="images/marmo-bookcase-3.webp">
+                        <img class="thumbnail" src="images/marmo-bookcase-4.webp">
+                        <img class="thumbnail" src="images/marmo-bookcase-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Maze</h2>
+                <img class="featured" src="images/maze-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/maze-bookcase-1.webp">
+                        <img class="thumbnail" src="images/maze-bookcase-2.webp">
+                        <img class="thumbnail" src="images/maze-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Med</h2>
+                <img class="featured" src="images/med-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/med-bookcase-1.webp">
+                        <img class="thumbnail" src="images/med-bookcase-2.webp">
+                        <img class="thumbnail" src="images/med-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Menan</h2>
+                <img class="featured" src="images/menan-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/menan-bookcase-1.webp">
+                        <img class="thumbnail" src="images/menan-bookcase-2.webp">
+                        <img class="thumbnail" src="images/menan-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Miles</h2>
+                <img class="featured" src="images/miles-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/miles-bookcase-1.webp">
+                        <img class="thumbnail" src="images/miles-bookcase-2.webp">
+                        <img class="thumbnail" src="images/miles-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Mocha</h2>
+                <img class="featured" src="images/mocha-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/mocha-bookcase-1.webp">
+                        <img class="thumbnail" src="images/mocha-bookcase-2.webp">
+                        <img class="thumbnail" src="images/mocha-bookcase-3.webp">
+                        <img class="thumbnail" src="images/mocha-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Moda</h2>
+                <img class="featured" src="images/moda-bookcase-.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/moda-bookcase-.webp">
+                        <img class="thumbnail" src="images/moda-bookcase-2.webp">
+                        <img class="thumbnail" src="images/moda-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Montesessori</h2>
+                <img class="featured" src="images/montessori-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/montessori-bookcase-1.webp">
+                        <img class="thumbnail" src="images/montessori-bookcase-2.webp">
+                        <img class="thumbnail" src="images/montessori-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Nur</h2>
+                <img class="featured" src="images/nur-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/nur-bookcase-1.webp">
+                        <img class="thumbnail" src="images/nur-bookcase-2.webp">
+                        <img class="thumbnail" src="images/nur-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Option</h2>
+                <img class="featured" src="images/option-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/option-bookcase-1.webp">
+                        <img class="thumbnail" src="images/option-bookcase-2.webp">
+                        <img class="thumbnail" src="images/option-bookcase-3.webp">
+                        <img class="thumbnail" src="images/option-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Poyraz</h2>
+                <img class="featured" src="images/poyraz-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/poyraz-bookcase-1.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-2.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-3.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-4.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-5.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-6.webp">
+                        <img class="thumbnail" src="images/poyraz-bookcase-7.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Rose</h2>
+                <img class="featured" src="images/rose-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/rose-bookcase-1.webp">
+                        <img class="thumbnail" src="images/rose-bookcase-2.webp">
+                        <img class="thumbnail" src="images/rose-bookcase-3.webp">
+                        <img class="thumbnail" src="images/rose-bookcase-4.webp">
+                        <img class="thumbnail" src="images/rose-bookcase-5.webp">
+                        <img class="thumbnail" src="images/rose-bookcase-6.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Sarmaşik</h2>
+                <img class="featured" src="images/sarmasik-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/sarmasik-bookcase-1.webp">
+                        <img class="thumbnail" src="images/sarmasik-bookcase-2.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Selenit</h2>
+                <img class="featured" src="images/selenit-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/selenit-bookcase-1.webp">
+                        <img class="thumbnail" src="images/selenit-bookcase-2.webp">
+                        <img class="thumbnail" src="images/selenit-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Simetric</h2>
+                <img class="featured" src="images/simetric-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/simetric-bookcase-1.webp">
+                        <img class="thumbnail" src="images/simetric-bookcase-2.webp">
+                        <img class="thumbnail" src="images/simetric-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Spring</h2>
+                <img class="featured" src="images/spring-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/spring-bookcase-1.webp">
+                        <img class="thumbnail" src="images/spring-bookcase-2.webp">
+                        <img class="thumbnail" src="images/spring-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Sude</h2>
+                <img class="featured" src="images/sude-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/sude-bookcase-1.webp">
+                        <img class="thumbnail" src="images/sude-bookcase-2.webp">
+                        <img class="thumbnail" src="images/sude-bookcase-3.webp">
+                        <img class="thumbnail" src="images/sude-bookcase-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Waves</h2>
+                <img class="featured" src="images/wave-bookcase-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/wave-bookcase-1.webp">
+                        <img class="thumbnail" src="images/wave-bookcase-2.webp">
+                        <img class="thumbnail" src="images/wave-bookcase-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  </footer>
-  <!-- End Footer Section -->
-		<!-- End Footer Section -->	
+    <script type="text/javascript">
+        let thumbnails = document.getElementsByClassName('thumbnail');
+
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('mouseover', function () {
+                let activeImage = document.getElementsByClassName('active');
+                if (activeImage.length > 0) {
+                    activeImage[0].classList.remove('active');
+                }
+                this.classList.add('active');
+                let featuredImage = this.closest('.slide-container').querySelector('.featured');
+                featuredImage.src = this.src;
+            });
+        }
+    </script>
 
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
+    <!-- Start Footer Section -->
+    <!-- Start Footer Section -->
+    <footer class="footer-section">
+        <div class="container relative">
+            <div class="row g-5 mb-5">
+
+
+                <div class="border-top">
+                    <div class="row pt-4">
+                        <div class="col-lg-4">
+                            <p class="mb-2 text-center text-lg-start">
+                                &copy;
+                                <script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash;
+                                Designed with
+                                love by <a>Jalal.Jr</a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <ul class="list-unstyled custom-social d-inline-flex">
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <ul class="list-unstyled d-inline-flex ms-auto">
+                                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- End Footer Section -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+</body>
 
 </html>

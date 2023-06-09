@@ -71,7 +71,7 @@
 		</div>
 
 	</nav>
-	
+
 	<div class="container1">
 		<span class="big-circle"></span>
 		<img src="images/shape.png" class="square" alt="" />
@@ -86,22 +86,22 @@
 				<div class="info">
 					<div class="information">
 						<img src="images/location.png" class="icon" alt="" />
-						<p>92 Cherry Drive Uniondale, NY 11553</p>
+						<p>spintex Road 18 juntion, Accra, Ghana</p>
 					</div>
 					<div class="information">
 						<img src="images/email.png" class="icon" alt="" />
-						<p>lorem@ipsum.com</p>
+						<p>habibfurniture1@gmail.com</p>
 					</div>
 					<div class="information">
 						<img src="images/phone.png" class="icon" alt="" />
-						<p>123-456-789</p>
+						<p>+233 50 038 0092</p>
 					</div>
 				</div>
 
 				<div class="social-media">
 					<p>Connect with us :</p>
 					<div class="social-icons">
-						<a href="#">
+						<a href="https://www.facebook.com/habibfurniturefactory"target="_blank">
 							<i class="fab fa-facebook-f"></i>
 						</a>
 						<a href="#">
@@ -109,9 +109,6 @@
 						</a>
 						<a href="#">
 							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="#">
-							<i class="fab fa-linkedin-in"></i>
 						</a>
 					</div>
 				</div>
@@ -121,7 +118,7 @@
 				<span class="circle one"></span>
 				<span class="circle two"></span>
 
-				<form action="index.html" autocomplete="off">
+				<form action="contact.php" autocomplete="on">
 					<h3 class="title">Contact us</h3>
 					<div class="input-container">
 						<input type="text" name="name" class="input" />
@@ -146,24 +143,71 @@
 					<input type="submit" value="Send" class="btn" />
 				</form>
 			</div>
+			<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+             <div class="elfsight-app-30461915-5d47-4d69-97c1-1a668685a289"></div>
 		</div>
 	</div>
+	<footer class="footer-section">
+		<div class="container relative">
+			<div class="row g-5 mb-5">
+
+
+				<div class="border-top">
+					<div class="row pt-4">
+						<div class="col-lg-4">
+							<p class="mb-2 text-center text-lg-start">
+								&copy;
+								<script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash;
+								Designed with
+								love by <a>Jalal.Jr</a>
+							</p>
+						</div>
+
+						<div class="col-lg-4 text-center">
+							<ul class="list-unstyled custom-social d-inline-flex">
+								<li>
+									<a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+								</li>
+								<li>
+									<a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="col-lg-4 text-center text-lg-end">
+							<ul class="list-unstyled d-inline-flex ms-auto">
+								<li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+								<li><a href="#">Privacy Policy</a></li>
+							</ul>
+						</div>
+
+
+
+					</div>
+				</div>
+			</div>
+	</footer>
+
 </body>
 
 <script>
 	const inputs = document.querySelectorAll('.input-container input, .input-container textarea');
-  
+
 	inputs.forEach((input) => {
-	  input.addEventListener('focus', () => {
-		input.parentElement.classList.add('focus');
-		console.log('Focus.....');
-	  });
-  
-	  input.addEventListener('blur', () => {
-		if (input.value === '') {
-		  input.parentElement.classList.remove('focus');
-		}
-	  });
+		input.addEventListener('focus', () => {
+			input.parentElement.classList.add('focus');
+			console.log('Focus.....');
+		});
+
+		input.addEventListener('blur', () => {
+			if (input.value === '') {
+				input.parentElement.classList.remove('focus');
+			}
+		});
 	});
-  </script>
+</script>
+
 </html>

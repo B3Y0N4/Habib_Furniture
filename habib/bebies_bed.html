@@ -7,58 +7,65 @@
 */ -->
 <!doctype html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Untree.co">
-  <link rel="shortcut icon" href="images/logo.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Untree.co">
+    <link rel="shortcut icon" href="images/logo.png">
 
-  <meta name="description" content="" />
-  <meta name="keywords" content="bootstrap, bootstrap4" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="bootstrap, bootstrap4" />
 
-		<!-- Bootstrap CSS -->
-		<link href="css/bootstrap.min.css" rel="stylesheet">
-		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-		<link href="css/tiny-slider.css" rel="stylesheet">
-		<link href="css/style.css" rel="stylesheet">
-		<form action="contact.php" method="POST">
-           <style>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="css/tiny-slider.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <form action="contact.php" method="POST">
+        <style>
             .copyright {
                 background-color: #3b5d50;
-                color: #3b5d50; /* Set text color to ensure readability */
-                padding: 20px; /* Adjust padding as needed */
+                color: #3b5d50;
+                /* Set text color to ensure readability */
+                padding: 20px;
+                /* Adjust padding as needed */
             }
-            </style>
-           
-		  <style>
-			.navbar-brand {
-			  display: inline-block;
-			  height: 200px; /* Adjust the height to your desired standard size */
-			  line-height: 100px; /* Match the line-height with the height for vertical alignment */
-			}
-		  
-			.navbar-brand img {
-			  height: 100%; /* Make the logo fill the entire height of the container */
-			  width: auto; /* Preserve the aspect ratio of the logo */
-			}
-		  </style>
-          <style>
+        </style>
+
+        <style>
+            .navbar-brand {
+                display: inline-block;
+                height: 200px;
+                /* Adjust the height to your desired standard size */
+                line-height: 100px;
+                /* Match the line-height with the height for vertical alignment */
+            }
+
+            .navbar-brand img {
+                height: 100%;
+                /* Make the logo fill the entire height of the container */
+                width: auto;
+                /* Preserve the aspect ratio of the logo */
+            }
+        </style>
+        <style>
             body {
                 padding-top: 100px;
             }
-        
+
             #content-wrapper {
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 align-items: center;
             }
-        
+
             .column {
                 width: 600px;
                 padding: 10px;
             }
-        
+
             .featured {
                 max-width: 500px;
                 max-height: 600px;
@@ -66,7 +73,7 @@
                 cursor: pointer;
                 border: 2px solid goldenrod;
             }
-        
+
             .thumbnail {
                 object-fit: cover;
                 max-width: 180px;
@@ -76,54 +83,54 @@
                 margin: 5px;
                 border: 2px solid goldenrod;
             }
-        
+
             .thumbnail:hover {
                 opacity: 1;
             }
-        
+
             .active {
                 opacity: 1;
             }
-        
+
             .slide-wrapper {
                 max-width: 500px;
                 display: flex;
                 min-height: 100px;
                 align-items: center;
             }
-        
+
             .slider {
                 width: 440px;
                 display: flex;
                 flex-wrap: nowrap;
                 overflow-x: auto;
             }
-        
+
             .slider::-webkit-scrollbar {
                 width: 8px;
             }
-        
+
             .slider::-webkit-scrollbar-track {
                 -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
             }
-        
+
             .slider::-webkit-scrollbar-thumb {
                 background-color: goldenrod;
                 outline: 1px solid slategrey;
                 border-radius: 100px;
             }
-        
+
             .slider::-webkit-scrollbar-thumb:hover {
                 background-color: #fff;
             }
-        
+
             .arrow {
                 width: 30px;
                 height: 30px;
                 cursor: pointer;
                 transition: 0.3s;
             }
-        
+
             .arrow:hover {
                 opacity: 0.5;
                 width: 35px;
@@ -132,440 +139,400 @@
         </style>
         <style>
             body {
-              background-color: #3b5d50;
-              }
+                background-color: #3b5d50;
+            }
         </style>
         <style>
             .column h2 {
-            font-size: 18px;
-            color: goldenrod ;
-            font-family: "URW Chancery L", cursive;
-            text-align: center;
+                font-size: 18px;
+                color: goldenrod;
+                font-family: "URW Chancery L", cursive;
+                text-align: center;
             }
-
         </style>
-	</head>
+</head>
 
-	<body>
-		<!-- Start Header/Navigation -->
-		<nav
-            class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-            arial-label="Furni navigation bar"
-        >
+<body>
+    <!-- Start Header/Navigation -->
+    <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png">
             </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsFurni"
-            aria-controls="navbarsFurni"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+                aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-       <div class="collapse navbar-collapse" id="navbarsFurni">
-         <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-          <li><a class="nav-link" href="index.html">Home</a></li>
-           <li class="nav-item active">
-             <a class="nav-link" href="adultroom.html">Bebies Bed Set</a>
-           </li>
-           <li><a class="nav-link" href="bedroom.html">Bed & Bedroom Set</a></li>
-           <li><a class="nav-link" href="about.html">About us</a></li>
-           <li><a class="nav-link" href="contact.html">Contact us</a></li>
-         </ul>
-       </div>
-     </div>
-   </nav>
-        <div id="content-wrapper">
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Acelya</h2>
-                    <img class="featured" src="images/acelya-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/acelya-montessori-1.webp">
-                            <img class="thumbnail" src="images/acelya-montessori-2.webp">
-                            <img class="thumbnail" src="images/acelya-montessori-3.webp">
-                        </div>
+            <div class="collapse navbar-collapse" id="navbarsFurni">
+                <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="adultroom.html">Bebies Bed Set</a>
+                    </li>
+                    <li><a class="nav-link" href="bedroom.html">Bed & Bedroom Set</a></li>
+                    <li><a class="nav-link" href="about.html">About us</a></li>
+                    <li><a class="nav-link" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="content-wrapper">
+        <div class="column">
+            <div class="slide-container">
+                <h2>Acelya</h2>
+                <img class="featured" src="images/acelya-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/acelya-montessori-1.webp">
+                        <img class="thumbnail" src="images/acelya-montessori-2.webp">
+                        <img class="thumbnail" src="images/acelya-montessori-3.webp">
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Baby</h2>
-                    <img class="featured" src="images/baby-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/baby-montessori-1.webp">
-                            <img class="thumbnail" src="images/baby-montessori-2.webp">
-                            <img class="thumbnail" src="images/baby-montessori-3.webp">
-                            <img class="thumbnail" src="images/baby-montessori-4.webp">
-                        </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Baby</h2>
+                <img class="featured" src="images/baby-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/baby-montessori-1.webp">
+                        <img class="thumbnail" src="images/baby-montessori-2.webp">
+                        <img class="thumbnail" src="images/baby-montessori-3.webp">
+                        <img class="thumbnail" src="images/baby-montessori-4.webp">
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Ballon</h2>
-                    <img class="featured" src="images/balloon-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/balloon-montessori-1.webp">
-                            <img class="thumbnail" src="images/balloon-montessori-2.webp">
-                            <img class="thumbnail" src="images/balloon-montessori-3.webp">
-                            <img class="thumbnail" src="images/balloon-montessori-4.webp">
-                        </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Ballon</h2>
+                <img class="featured" src="images/balloon-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/balloon-montessori-1.webp">
+                        <img class="thumbnail" src="images/balloon-montessori-2.webp">
+                        <img class="thumbnail" src="images/balloon-montessori-3.webp">
+                        <img class="thumbnail" src="images/balloon-montessori-4.webp">
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Bird</h2>
-                    <img class="featured" src="images/bird-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/bird-montessori-1.webp">
-                            <img class="thumbnail" src="images/bird-montessori-2.webp">
-                            <img class="thumbnail" src="images/bird-montessori-3.webp">
-                        </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Bird</h2>
+                <img class="featured" src="images/bird-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/bird-montessori-1.webp">
+                        <img class="thumbnail" src="images/bird-montessori-2.webp">
+                        <img class="thumbnail" src="images/bird-montessori-3.webp">
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Cat</h2>
-                    <img class="featured" src="images/cat-bed-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/cat-bed-1.webp">
-                            <img class="thumbnail" src="images/cat-bed-2.webp">
-                            <img class="thumbnail" src="images/cat-bed-3.webp">
-                        </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Cat</h2>
+                <img class="featured" src="images/cat-bed-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/cat-bed-1.webp">
+                        <img class="thumbnail" src="images/cat-bed-2.webp">
+                        <img class="thumbnail" src="images/cat-bed-3.webp">
                     </div>
                 </div>
             </div>
-            
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Cati</h2>
-                    <img class="featured" src="images/cati-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/cati-montessori-1.webp">
-                            <img class="thumbnail" src="images/cati-montessori-2.webp">
-                            <img class="thumbnail" src="images/cati-montessori-3.webp">
-                            <img class="thumbnail" src="images/cati-montessori-4.webp">
-                            <img class="thumbnail" src="images/cati-montessori-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Dog</h2>
-                    <img class="featured" src="images/dog-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/dog-montessori-1.webp">
-                            <img class="thumbnail" src="images/dog-montessori-2.webp">
-                            <img class="thumbnail" src="images/dog-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Elegance</h2>
-                    <img class="featured" src="images/elegance-bed-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/elegance-bed-1.webp">
-                            <img class="thumbnail" src="images/elegance-bed-2.webp">
-                            <img class="thumbnail" src="images/elegance-bed-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Home</h2>
-                    <img class="featured" src="images/home-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/home-montessori-1.webp">
-                            <img class="thumbnail" src="images/home-montessori-2.webp">
-                            <img class="thumbnail" src="images/home-montessori-3.webp">
-                            <img class="thumbnail" src="images/home-montessori-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Kitty</h2>
-                    <img class="featured" src="images/kitty-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/kitty-montessori-1.webp">
-                            <img class="thumbnail" src="images/kitty-montessori-2.webp">
-                            <img class="thumbnail" src="images/kitty-montessori-3.webp">
-                            <img class="thumbnail" src="images/kitty-montessori-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Livana</h2>
-                    <img class="featured" src="images/livana-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/livana-montessori-1.webp">
-                            <img class="thumbnail" src="images/livana-montessori-2.webp">
-                            <img class="thumbnail" src="images/livana-montessori-3.webp">
-                            <img class="thumbnail" src="images/livana-montessori-4.webp">
-                            <img class="thumbnail" src="images/livana-montessori-5.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Luxury</h2>
-                    <img class="featured" src="images/luxury-bed-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/luxury-bed-1.webp">
-                            <img class="thumbnail" src="images/luxury-bed-2.webp">
-                            <img class="thumbnail" src="images/luxury-bed-3.webp">
-                            <img class="thumbnail" src="images/luxury-bed-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Minel</h2>
-                    <img class="featured" src="images/minel-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/minel-montessori-1.webp">
-                            <img class="thumbnail" src="images/minel-montessori-2.webp">
-                            <img class="thumbnail" src="images/minel-montessori-3.webp">
-                            <img class="thumbnail" src="images/yagmur-montessori-2.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Mini</h2>
-                    <img class="featured" src="images/mini-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/mini-montessori-1.webp">
-                            <img class="thumbnail" src="images/mini-montessori-2.webp">
-                            <img class="thumbnail" src="images/mini-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Modern</h2>
-                    <img class="featured" src="images/modern-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/modern-montessori-1.webp">
-                            <img class="thumbnail" src="images/modern-montessori-2.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Puppies</h2>
-                    <img class="featured" src="images/puppies-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/puppies-montessori-1.webp">
-                            <img class="thumbnail" src="images/puppies-montessori-2.webp">
-                            <img class="thumbnail" src="images/puppies-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Sand</h2>
-                    <img class="featured" src="images/sand-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/sand-montessori-1.webp">
-                            <img class="thumbnail" src="images/sand-montessori-2.webp">
-                            <img class="thumbnail" src="images/sand-montessori-3.webp">
-                            <img class="thumbnail" src="images/sand-montessori-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Secil</h2>
-                    <img class="featured" src="images/secil-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/secil-montessori-1.webp">
-                            <img class="thumbnail" src="images/secil-montessori-2.webp">
-                            <img class="thumbnail" src="images/secil-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Skelet</h2>
-                    <img class="featured" src="images/skelet-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/skelet-montessori-1.webp">
-                            <img class="thumbnail" src="images/skelet-montessori-2.webp">
-                            <img class="thumbnail" src="images/skelet-montessori-3.webp">
-                            <img class="thumbnail" src="images/skelet-montessori-4.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Special</h2>
-                    <img class="featured" src="images/special-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/special-montessori-1.webp">
-                            <img class="thumbnail" src="images/special-montessori-2.webp">
-                            <img class="thumbnail" src="images/special-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column">
-                <div class="slide-container">
-                    <h2>Star</h2>
-                    <img class="featured" src="images/star-montessori-1.webp">
-                    <div class="slide-wrapper">
-                        <div class="slider">
-                            <img class="thumbnail active" src="images/star-montessori-1.webp">
-                            <img class="thumbnail" src="images/star-montessori-2.webp">
-                            <img class="thumbnail" src="images/star-montessori-3.webp">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> 
-        <script type="text/javascript">
-            let thumbnails = document.getElementsByClassName('thumbnail');
-        
-            for (var i = 0; i < thumbnails.length; i++) {
-                thumbnails[i].addEventListener('mouseover', function () {
-                    let activeImage = document.getElementsByClassName('active');
-                    if (activeImage.length > 0) {
-                        activeImage[0].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    let featuredImage = this.closest('.slide-container').querySelector('.featured');
-                    featuredImage.src = this.src;
-                });
-            }
-        </script>
-       
+        </div>
 
-		<!-- Start Footer Section -->
-	<!-- Start Footer Section -->
+        <div class="column">
+            <div class="slide-container">
+                <h2>Cati</h2>
+                <img class="featured" src="images/cati-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/cati-montessori-1.webp">
+                        <img class="thumbnail" src="images/cati-montessori-2.webp">
+                        <img class="thumbnail" src="images/cati-montessori-3.webp">
+                        <img class="thumbnail" src="images/cati-montessori-4.webp">
+                        <img class="thumbnail" src="images/cati-montessori-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Dog</h2>
+                <img class="featured" src="images/dog-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/dog-montessori-1.webp">
+                        <img class="thumbnail" src="images/dog-montessori-2.webp">
+                        <img class="thumbnail" src="images/dog-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Elegance</h2>
+                <img class="featured" src="images/elegance-bed-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/elegance-bed-1.webp">
+                        <img class="thumbnail" src="images/elegance-bed-2.webp">
+                        <img class="thumbnail" src="images/elegance-bed-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Home</h2>
+                <img class="featured" src="images/home-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/home-montessori-1.webp">
+                        <img class="thumbnail" src="images/home-montessori-2.webp">
+                        <img class="thumbnail" src="images/home-montessori-3.webp">
+                        <img class="thumbnail" src="images/home-montessori-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Kitty</h2>
+                <img class="featured" src="images/kitty-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/kitty-montessori-1.webp">
+                        <img class="thumbnail" src="images/kitty-montessori-2.webp">
+                        <img class="thumbnail" src="images/kitty-montessori-3.webp">
+                        <img class="thumbnail" src="images/kitty-montessori-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Livana</h2>
+                <img class="featured" src="images/livana-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/livana-montessori-1.webp">
+                        <img class="thumbnail" src="images/livana-montessori-2.webp">
+                        <img class="thumbnail" src="images/livana-montessori-3.webp">
+                        <img class="thumbnail" src="images/livana-montessori-4.webp">
+                        <img class="thumbnail" src="images/livana-montessori-5.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Luxury</h2>
+                <img class="featured" src="images/luxury-bed-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/luxury-bed-1.webp">
+                        <img class="thumbnail" src="images/luxury-bed-2.webp">
+                        <img class="thumbnail" src="images/luxury-bed-3.webp">
+                        <img class="thumbnail" src="images/luxury-bed-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Minel</h2>
+                <img class="featured" src="images/minel-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/minel-montessori-1.webp">
+                        <img class="thumbnail" src="images/minel-montessori-2.webp">
+                        <img class="thumbnail" src="images/minel-montessori-3.webp">
+                        <img class="thumbnail" src="images/yagmur-montessori-2.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Mini</h2>
+                <img class="featured" src="images/mini-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/mini-montessori-1.webp">
+                        <img class="thumbnail" src="images/mini-montessori-2.webp">
+                        <img class="thumbnail" src="images/mini-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Modern</h2>
+                <img class="featured" src="images/modern-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/modern-montessori-1.webp">
+                        <img class="thumbnail" src="images/modern-montessori-2.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Puppies</h2>
+                <img class="featured" src="images/puppies-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/puppies-montessori-1.webp">
+                        <img class="thumbnail" src="images/puppies-montessori-2.webp">
+                        <img class="thumbnail" src="images/puppies-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Sand</h2>
+                <img class="featured" src="images/sand-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/sand-montessori-1.webp">
+                        <img class="thumbnail" src="images/sand-montessori-2.webp">
+                        <img class="thumbnail" src="images/sand-montessori-3.webp">
+                        <img class="thumbnail" src="images/sand-montessori-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Secil</h2>
+                <img class="featured" src="images/secil-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/secil-montessori-1.webp">
+                        <img class="thumbnail" src="images/secil-montessori-2.webp">
+                        <img class="thumbnail" src="images/secil-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Skelet</h2>
+                <img class="featured" src="images/skelet-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/skelet-montessori-1.webp">
+                        <img class="thumbnail" src="images/skelet-montessori-2.webp">
+                        <img class="thumbnail" src="images/skelet-montessori-3.webp">
+                        <img class="thumbnail" src="images/skelet-montessori-4.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Special</h2>
+                <img class="featured" src="images/special-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/special-montessori-1.webp">
+                        <img class="thumbnail" src="images/special-montessori-2.webp">
+                        <img class="thumbnail" src="images/special-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="column">
+            <div class="slide-container">
+                <h2>Star</h2>
+                <img class="featured" src="images/star-montessori-1.webp">
+                <div class="slide-wrapper">
+                    <div class="slider">
+                        <img class="thumbnail active" src="images/star-montessori-1.webp">
+                        <img class="thumbnail" src="images/star-montessori-2.webp">
+                        <img class="thumbnail" src="images/star-montessori-3.webp">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let thumbnails = document.getElementsByClassName('thumbnail');
+
+        for (var i = 0; i < thumbnails.length; i++) {
+            thumbnails[i].addEventListener('mouseover', function () {
+                let activeImage = document.getElementsByClassName('active');
+                if (activeImage.length > 0) {
+                    activeImage[0].classList.remove('active');
+                }
+                this.classList.add('active');
+                let featuredImage = this.closest('.slide-container').querySelector('.featured');
+                featuredImage.src = this.src;
+            });
+        }
+    </script>
+
+
+    <!-- Start Footer Section -->
+    <!-- Start Footer Section -->
     <footer class="footer-section">
         <div class="container relative">
-  
-          <div class="row g-5 mb-5">
-            <div class="col-lg-4">
-              
-              <ul class="list-unstyled custom-social">
-                <li>
-                  <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
-                </li>
-              </ul>
-            </div>
-  
-            <div class="col-lg-8">
-              <div class="row links-wrap">
-                <div class="col-6 col-sm-6 col-md-3">
-                  <ul class="list-unstyled">
-                 
-                  </ul>
-                </div>
-  
-                <div class="col-6 col-sm-6 col-md-3">
-                  <ul class="list-unstyled">
-                 
-                  </ul>
-                </div>
-  
-                <div class="col-6 col-sm-6 col-md-3">
-                  <ul class="list-unstyled">
-                 
-                  </ul>
-                </div>
-  
-                <div class="col-6 col-sm-6 col-md-3">
-                  <ul class="list-unstyled">
-              
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-  
-          <div class="border-top copyright">
-            <div class="row pt-4">
-              <div class="col-lg-6">
-                <p class="mb-2 text-center text-lg-start">
-                  Copyright &copy;
-                  <script>
-                    document.write(new Date().getFullYear());
-                  </script>
-                  . All Rights Reserved. &mdash; Designed with love by
-                  <a >Jalal.Jr</a>
-                  <!-- License information: https://untree.co/license/ -->
-                </p>
-              </div>
-  
-              <div class="col-lg-6 text-center text-lg-end">
-                <ul class="list-unstyled d-inline-flex ms-auto">
-                  <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-      <!-- End Footer Section -->
-		<!-- End Footer Section -->	
+            <div class="row g-5 mb-5">
 
 
-		<script src="js/bootstrap.bundle.min.js"></script>
-		<script src="js/tiny-slider.js"></script>
-		<script src="js/custom.js"></script>
-	</body>
+                <div class="border-top">
+                    <div class="row pt-4">
+                        <div class="col-lg-4">
+                            <p class="mb-2 text-center text-lg-start">
+                                &copy;
+                                <script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash;
+                                Designed with
+                                love by <a>Jalal.Jr</a>
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4 text-center">
+                            <ul class="list-unstyled custom-social d-inline-flex">
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+                                </li>
+                                <li>
+                                    <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-4 text-center text-lg-end">
+                            <ul class="list-unstyled d-inline-flex ms-auto">
+                                <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- End Footer Section -->
+    <!-- End Footer Section -->
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/custom.js"></script>
+</body>
 
 </html>

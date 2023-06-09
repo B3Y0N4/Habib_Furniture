@@ -7,271 +7,235 @@
 */ -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="author" content="Untree.co" />
-    <link rel="shortcut icon" href="images/logo.webp" />
 
-    <meta name="description" content="" />
-    <meta name="keywords" content="bootstrap, bootstrap4" />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="author" content="Untree.co" />
+  <link rel="shortcut icon" href="images/logo.webp" />
 
-    <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link href="css/tiny-slider.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
-    <style>
-      .navbar-brand {
-        display: inline-block;
-        height: 200px; /* Adjust the height to your desired standard size */
-        line-height: 100px; /* Match the line-height with the height for vertical alignment */
-      }
-    
-      .navbar-brand img {
-        height: 100%; /* Make the logo fill the entire height of the container */
-        width: auto; /* Preserve the aspect ratio of the logo */
-      }
-    </style>
-    <style>
-        .photo-thumbnail {
-        border: -70px solid #fafafa;
-        width: 450px;
-        height: 250px;
-        object-fit: cover;
-      }
+  <meta name="description" content="" />
+  <meta name="keywords" content="bootstrap, bootstrap4" />
 
-       .hero-img-wrap img {
-        width: 400%;
-        height: 400;
-        margin-left: 400px;
-        margin-top: 400px;
-      }
-    </style>
-
-    <style>
-    body{background-color:hsl(30, 20%, 96%)}
-
-    #frame{
-      position:relative;
-      padding:0;
-      margin:0;
-      border:solid 15px #3b5d50; 
-      max-width:600px;
-      margin:40px auto;
-      box-shadow:-3px -3px 12px #686965cd;
-      
-      }
-    #border{
-      position:relative;
-      padding:0;
-      margin:0;
-      border:solid 70px white;
-    box-shadow:-3px -3px 12px #999;
-        }  
-    img{
-      display:block;
-      padding:0;
-      margin:0;
-      width:100%;
-      height:auto;
-      border-top:solid 2px #aaa;
-      border-left:solid 2px #aaa;
-      border-bottom:solid 2px #ccc;
-      border-right:solid 2px #ccc;
-      }
-    
-    </style>
+  <!-- Bootstrap CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="css/tiny-slider.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
   <style>
-  .title1 {
-    color: #333;
-    text-align: center;
-    font-size: 32px;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 49%;
-    left: 33%;
-    transform: translate(-50%, -50%);
-    /* Additional positioning */
-    right: 20px;
-    bottom: 20px;
-    
-}
-.title2 {
-    color: #333;
-    text-align: center;
-    font-size: 32px;
-    font-family: Arial, sans-serif;
-    position: absolute;
-    top: 25%;
-    left: 8%;
-    transform: translate(10%, 10%);
-    /* Additional positioning */
-    padding-left: 20px;
-    
-}
+    .navbar-brand {
+      display: inline-block;
+      height: 200px;
+      /* Adjust the height to your desired standard size */
+      line-height: 100px;
+      /* Match the line-height with the height for vertical alignment */
+    }
 
-    </style>
-  </head>
+    .navbar-brand img {
+      height: 100%;
+      /* Make the logo fill the entire height of the container */
+      width: auto;
+      /* Preserve the aspect ratio of the logo */
+    }
+  </style>
+  <style>
+    .photo-thumbnail {
+      border: -70px solid #fafafa;
+      width: 450px;
+      height: 250px;
+      object-fit: cover;
+    }
 
-  <body>
-    <!-- Start Header/Navigation -->
-    <nav
-      class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark"
-      arial-label="Furni navigation bar"
-    >
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="images/logo.webp">
-        </a>
+    .hero-img-wrap img {
+      width: 400%;
+      height: 400;
+      margin-left: 400px;
+      margin-top: 400px;
+    }
+  </style>
 
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarsFurni"
-          aria-controls="navbarsFurni"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+  <style>
+    body {
+      background-color: hsl(30, 20%, 96%)
+    }
 
-        <div class="collapse navbar-collapse" id="navbarsFurni">
-          <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="active">
-              <a class="nav-link" href="shop.html">Our Design</a>
-            </li>
-            <li><a class="nav-link" href="about.html">About us</a></li>
-            <li><a class="nav-link" href="contact.html">Contact us</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Header/Navigation -->
-    <!-- Start Hero Section -->
-    <div class="hero">
-      <div class="container">
-        <div class="row justify-content-between">
-          <div class="col-lg-5">
-          </div>
-          <div class="col-lg-7"></div>
-        </div>
-      </div>
-    </div>
-    <!-- End Hero Section -->
-    <h1 class="title1">Living Room</h1>
+    #frame {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      border: solid 15px #3b5d50;
+      max-width: 600px;
+      margin: 40px auto;
+      box-shadow: -3px -3px 12px #686965cd;
 
-    <div class="untree_co-section product-section before-footer-section">
-      <div class="container">
-        <div class="row">
-          <!-- Start Column 1 -->
-          <div id="frame">
-            <div id="border">
-              <img src="images/living-room.webp">
-              <a class="product-item" href="living_room.html"></a>
-            </div><!-- #border -->
-          </div><!-- #frame -->
-          <!-- End Column 1 -->
+    }
 
-          <p class="title2">Wall & TV Unit</p>
-          <!-- Start Column 3 -->
-          <div id="frame">
-            <div id="border">
-              <img src="images/living-room.webp">
-              <a class="product-item" href="contact.html"></a>
-            </div><!-- #border -->
-          </div><!-- #frame -->
-          <!-- End Column 3 -->
+    #border {
+      position: relative;
+      padding: 0;
+      margin: 0;
+      border: solid 70px white;
+      box-shadow: -3px -3px 12px #999;
+    }
 
-    <!-- Start Footer Section -->
- <!-- Start Footer Section -->
- <footer class="footer-section">
-  <div class="container relative">
+    img {
+      display: block;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: auto;
+      border-top: solid 2px #aaa;
+      border-left: solid 2px #aaa;
+      border-bottom: solid 2px #ccc;
+      border-right: solid 2px #ccc;
+    }
+  </style>
+  <style>
+    .title1 {
+      color: #333;
+      text-align: center;
+      font-size: 32px;
+      font-family: Arial, sans-serif;
+      position: absolute;
+      top: 49%;
+      left: 33%;
+      transform: translate(-50%, -50%);
+      /* Additional positioning */
+      right: 20px;
+      bottom: 20px;
 
-    <div class="row g-5 mb-5">
-      <div class="col-lg-4">
-        
-        <ul class="list-unstyled custom-social">
-          <li>
-            <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+    }
+
+    .title2 {
+      color: #333;
+      text-align: center;
+      font-size: 32px;
+      font-family: Arial, sans-serif;
+      position: absolute;
+      top: 25%;
+      left: 8%;
+      transform: translate(10%, 10%);
+      /* Additional positioning */
+      padding-left: 20px;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Start Header/Navigation -->
+  <nav class="custom-navbar navbar navbar navbar-expand-md navbar-dark bg-dark" arial-label="Furni navigation bar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/logo.webp">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsFurni"
+        aria-controls="navbarsFurni" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsFurni">
+        <ul class="custom-navbar-nav navbar-nav ms-auto mb-2 mb-md-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
           </li>
-          <li>
-            <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+          <li class="active">
+            <a class="nav-link" href="shop.html">Our Design</a>
           </li>
-          <li>
-            <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
-          </li>
+          <li><a class="nav-link" href="about.html">About us</a></li>
+          <li><a class="nav-link" href="contact.html">Contact us</a></li>
         </ul>
       </div>
-
-      <div class="col-lg-8">
-        <div class="row links-wrap">
-          <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-           
-            </ul>
-          </div>
-
-          <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-           
-            </ul>
-          </div>
-
-          <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-           
-            </ul>
-          </div>
-
-          <div class="col-6 col-sm-6 col-md-3">
-            <ul class="list-unstyled">
-        
-            </ul>
-          </div>
-        </div>
-      </div>
     </div>
-
-    <div class="border-top copyright">
-      <div class="row pt-4">
-        <div class="col-lg-6">
-          <p class="mb-2 text-center text-lg-start">
-            Copyright &copy;
-            <script>
-              document.write(new Date().getFullYear());
-            </script>
-            . All Rights Reserved. &mdash; Designed with love by
-            <a >Jalal.Jr</a>
-            <!-- License information: https://untree.co/license/ -->
-          </p>
+  </nav>
+  <!-- End Header/Navigation -->
+  <!-- Start Hero Section -->
+  <div class="hero">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-5">
         </div>
-
-        <div class="col-lg-6 text-center text-lg-end">
-          <ul class="list-unstyled d-inline-flex ms-auto">
-            <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-          </ul>
-        </div>
+        <div class="col-lg-7"></div>
       </div>
     </div>
   </div>
-</footer>
-<!-- End Footer Section -->
-    <!-- End Footer Section -->
+  <!-- End Hero Section -->
+  <h1 class="title1">Living Room</h1>
 
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/tiny-slider.js"></script>
-    <script src="js/custom.js"></script>
-  </body>
+  <div class="untree_co-section product-section before-footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Start Column 1 -->
+        <div id="frame">
+          <div id="border">
+            <img src="images/living-room.webp">
+            <a class="product-item" href="living_room.html"></a>
+          </div><!-- #border -->
+        </div><!-- #frame -->
+        <!-- End Column 1 -->
+
+        <p class="title2">Wall & TV Unit</p>
+        <!-- Start Column 3 -->
+        <div id="frame">
+          <div id="border">
+            <img src="images/living-room.webp">
+            <a class="product-item" href="contact.html"></a>
+          </div><!-- #border -->
+        </div><!-- #frame -->
+        <!-- End Column 3 -->
+
+        <!-- Start Footer Section -->
+        <!-- Start Footer Section -->
+        <footer class="footer-section">
+          <div class="container relative">
+            <div class="row g-5 mb-5">
+
+
+              <div class="border-top">
+                <div class="row pt-4">
+                  <div class="col-lg-4">
+                    <p class="mb-2 text-center text-lg-start">
+                      &copy;
+                      <script>document.write(new Date().getFullYear());</script> All Rights Reserved. &mdash; Designed
+                      with
+                      love by <a>Jalal.Jr</a>
+                    </p>
+                  </div>
+
+                  <div class="col-lg-4 text-center">
+                    <ul class="list-unstyled custom-social d-inline-flex">
+                      <li>
+                        <a href="#"><span class="fa fa-brands fa-facebook-f"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="fa fa-brands fa-twitter"></span></a>
+                      </li>
+                      <li>
+                        <a href="#"><span class="fa fa-brands fa-instagram"></span></a>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <div class="col-lg-4 text-center text-lg-end">
+                    <ul class="list-unstyled d-inline-flex ms-auto">
+                      <li class="me-4"><a href="#">Terms &amp; Conditions</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+        </footer>
+        <!-- End Footer Section -->
+        <!-- End Footer Section -->
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/tiny-slider.js"></script>
+        <script src="js/custom.js"></script>
+</body>
+
 </html>
